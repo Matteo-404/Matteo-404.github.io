@@ -7,17 +7,35 @@
     <link rel="stylesheet" href="style.css">                       <!-- here we are linking the .css files to our main html one -->
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Matteo Cirillo's first draft website</div>        <!-- this is the first division with the name as logo -->
+<body>    <!-- this is the body of the page... where everything that is displayed on it, is-->
+    <nav id="desktop-nav">          <!--the first block is a navigation one... to ease the view of the page-->
+        <div class="logo">Matteo Cirillo</div>        <!-- this is the first division with the name as logo -->
         <div>                                         <!-- this the next division, where we put clickable things to navigate throught he sections of the page -->
             <ul class="nav-links">                    <!-- this is the list to put all clickable links-->
-                <li><a href="#about">About</a></li>              
-                <li><a href="#about">Experience</a></li>    
-                <li><a href="#about">Projects</a></li>
-                <li><a href="#about">Contact</a></li>
+                <li><a href="#about">About</a></li>              <!-- these are the text that will be clickable-->
+                <li><a href="#experience">Experience</a></li>    <!-- the href= updates the link of the page...-->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+    </nav>
+
+    <!-- we make a smilar navigation block for small screens -->
+    <nav id="hamburger-nav">
+        <div class="logo">Matteo Cirillo</div> <!--again put name-->
+        <div class="hambuger-menu"> <!--clickable links are now under a hamburger menu (look it up)-->
+            <div class="hamburger-icon" onclick="toggleMenu()"> <!--the menu should open on click... requires a javascript function...-->
+                <span></span> <!--the three horizontal lines of the hamburger icon-->
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>              <!-- these are text that will be clickable-->
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>    
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div> 
     </nav>
     <script src="script.js"></script>
 </body>
