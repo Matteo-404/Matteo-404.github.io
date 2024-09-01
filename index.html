@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>                                    <!-- this is the title of the file -->
-    <link rel="stylesheet" href="style.css">                       <!-- here we are linking the .css files to our main html one -->
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Matteo Cirillo's first draft website</div>        <!-- this is the first division with the name as logo -->
-        <div>                                         <!-- this the next division, where we put clickable things to navigate throught he sections of the page -->
-            <ul class="nav-links">                    <!-- this is the list to put all clickable links-->
-                <li><a href="#about">About</a></li>              
-                <li><a href="#about">Experience</a></li>    
-                <li><a href="#about">Projects</a></li>
-                <li><a href="#about">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Matteo Cirillo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <script src="script.js"></script>
-</body>
-</html>
+    <nav id="hamburger-nav">
+      <div class="logo">Matteo Cirillo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-mc.JPG" alt="Matteo Cirillo profile picture" class="roundEdgeImage"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Matteo Cirillo</h1>
+        <p class="section__text__p2">EPFL MSc Student in Microengineering & Quantum Science</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon2"
+            onclick="location.href='https://www.linkedin.com/in/matteo-cirillo-25a835237'"
+          />
+        </div>
+        <!--div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon2"
+            onclick="location.href='https://www.linkedin.com/in/matteo-cirillo-25a835237'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div-->
+      </div>
+    </section>
+
