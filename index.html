@@ -28,15 +28,17 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
+
+
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- Uncomment the line below if you also wish to use an image logo next to the site name -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">DevFolio</h1>
+        <h1 class="sitename">Matteo Cirillo</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -72,17 +74,36 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
 
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+    <!-- Hero Section : where you present only yourself.-->
+    <section id="hero" class="hero section hero-background">
+
+      <!--img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in"--->
+
+      <div class="wraparoundclass container d-flex flex-row align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="hero_pic_container">
+          <img src="./assets/img/profile_pic.JPG" alt="Matteo Cirillo Profile picture" class="hero-pic">
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="heroTitle">Matteo Cirillo</h1>
+          <p class="section__text__p2">EPFL MSc Student in Microengineering & Quantum Science</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Resume</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'"> Contact Info</button>
+            <img src="./assets/img/LinkedIn_icon_circle.svg" alt="My LinkedIn profile" class="myIcon" onclick="location.href='https://www.linkedin.com/in/matteo-cirillo-25a835237'">
+          </div>
+        </div>
+      </div>
+      <!--div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">  
         <h2>I am Morgan Freeman</h2>
         <p><span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
-      </div>
+      </div-->
 
     </section><!-- /Hero Section -->
+
+
 
     <!-- About Section -->
     <section id="about" class="about section">
