@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Matteo Cirillo</div>
+      <div class="logo">Portfolio</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Matteo Cirillo</div>
+      <div class="logo">Portfolio</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -36,10 +36,15 @@
         </div>
       </div>
     </nav>
+
+
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic-mc.JPG" alt="Matteo Cirillo profile picture" class="roundEdgeImage"/>
+        <img src="./assets/profile-pic-mc.JPG" 
+        alt="Matteo Cirillo profile picture" 
+        class="roundEdgeImage"/>
       </div>
+
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Matteo Cirillo</h1>
@@ -76,24 +81,32 @@
           />
         </div-->
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="icon profarrow"
+        class="icon profarrow"
+        onclick="location.href='./#about'"
+      />
     </section>
 
 
 
-    <!--section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+    <section id="about">
+      <!--p class="section__text__p1">Get To Know More</p-->
       <h1 class="title">About</h1>
-      <div class="section-container">
+
+      <div class="section-container"> <!--picture on the left-->
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/about-pic.jpg"
             alt="Profile picture"
             class="about-pic"
           />
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
+
+        <div class="about-details-container"> <!--details on the right-->
+          <div class="about-containers">            <!--first the div for the boxes-->
+            <!--div class="details-container">
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
@@ -101,27 +114,48 @@
               />
               <h3>Experience</h3>
               <p>2+ years <br />Frontend Development</p>
-            </div>
+            </div-->
             <div class="details-container">
-              <img
+              <!--img
                 src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
-              />
+              /-->
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              
+                <div class="swiper-wrapper timeline">
+                  <div class="swiper-slide">
+                    <div class="timestamp">
+                      <img src="./assets/logo_epfl.png" alt="EPFLBSc" class="icon epfl">
+                    </div>
+                    <div class="status">
+                      <span>BSc Microengineering</span>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="timestamp">
+                        <img src="./assets/TUDelft_logo_rgb.png" alt="TUDBSc" class="icon">
+                    </div>
+                    <div class="status">
+                      <span>Exchange year</span>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="timestamp">
+                      <img src="./assets/logo_epfl.png" alt="EPFLBSc" class="icon epfl">
+                    </div>
+                    <div class="status">
+                      <span>MSc Microengineering & Quantum Science</span>
+                    </div>
+                  </div>
+                  
+                </div>
             </div>
           </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
+
+          
         </div>
       </div>
       <img
@@ -131,6 +165,9 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -265,6 +302,8 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -385,7 +424,7 @@
         </div>
       </nav>
       <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-    </footer-->
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

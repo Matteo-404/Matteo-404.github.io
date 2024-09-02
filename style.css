@@ -12,7 +12,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 p {
@@ -174,11 +174,10 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  border-radius: 50%;
 }
 
 .roundEdgeImage {
-    border-radius: 50px;
+    border-radius: 2rem;
 }
 
 .section__text {
@@ -281,10 +280,14 @@ section {
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
 }
 
 .about-details-container {
@@ -292,9 +295,10 @@ section {
   flex-direction: column;
 }
 
-.about-containers,
-.about-details-container {
-  display: flex;
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .about-pic {
@@ -307,6 +311,12 @@ section {
   bottom: 2.5rem;
 }
 
+.profarrow {
+    position: absolute;
+    right: 15rem;
+    bottom: 5rem;
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -317,16 +327,72 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
+.details-container h3 {
+    font-size: 1.5rem;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
+.timeline {
+    margin: 15px 0;
+    list-style-type: none;
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .timeline li {
+    transition: all 200ms ease-in;
+  }
+
+
+  .epfl {
+    padding-top: 0.9rem;
+    height: 1.1rem
+  }
+
+  .timestamp {
+    width: 50%; 
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .status {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 0.1rem solid black;
+    position: relative;
+    transition: all 200ms ease-in ;
+  }
+    
+  .status span {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 17px;
+  }
+  .status span:before {
+    content: '';
+    width:  0.5rem;
+    height: 0.5rem;
+    background-color: rgb(100,100,100);
+    border-radius: 25px;
+    border: 0.1rem solid black;
+    position: absolute;
+    top: -6px;
+    left: calc(50% - 12px); 
+    transition: all 200ms ease-in;
+  }
+  
+
+  .swiper-slide {
+    width: fit-content;
+    text-align: center;
+    font-size: 18px;
+  }
+
+
 
 /* EXPERIENCE SECTION */
 
