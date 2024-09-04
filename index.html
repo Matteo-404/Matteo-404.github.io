@@ -259,7 +259,7 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <!--filters for project display-->
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="50">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="10">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">BSc EPFL</li>  <!--each filer has a "data-filter" which must be put in the class of the portfolio item that should be displayed in that filter-->
             <li data-filter=".filter-product">TU Delft</li>
@@ -268,16 +268,17 @@
           </ul><!-- End Portfolio Filters -->
           
           <!--portfolio showcase-->
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="50">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="100">
             
             <!--a portfolio item. put the chosen "data-filer" in the class-->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/psi_01_sp.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" 
+            onclick="location.href='portfolio-details.html'"> <!--this makes it clickable-->
+              <img src="assets/img/portfolio/PSI/boardDisplay.jpg" class="img-fluid" alt=""> <!--portfolio image-->
+              <div class="portfolio-info"> <!-- this only shows up on hover-->
                 <h4>AOM Board</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/psi_01_sp.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <!--a href="assets/img/portfolio/PSI/boardDisplay.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a-->
+                <!--a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a-->
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -416,7 +417,7 @@
 
             <div class="resume-item pb-0">
               <h4>Matteo Cirillo</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <p><em>EPFL MSc student in Microengineering and Quantum science. My major is in microfabrication, with an additional focus on quantum science an technology. I have a further interest in optics, which motivated my internship at PSI over the summer of 2024.</em></p>
               
               <div class="skills-content skills-animation">
                 <div class="progress">

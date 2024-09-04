@@ -1459,18 +1459,24 @@ section,
   position: relative;
 }
 
+.portfolio .portfolio-item:hover {
+  cursor: pointer /* make the cursors the hand pointer on hover! to let know it's clickable */
+}
+
+/* this is the styling of the info box "portfolio-info" */
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  opacity: 0;    /* starts out completely transparent.... we'll set it to show up on hover later */
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 0;
+  bottom: 0;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
   z-index: 3;
   transition: all ease-in-out 0.3s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
   padding: 15px;
-}
+} /* great! the above makes sense */
 
+/* styling of the h4 header in the info box */
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   font-weight: 600;
@@ -1505,9 +1511,10 @@ section,
   font-size: 28px;
 }
 
+/* this is the thing that makes the info show up on hover */
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 /*--------------------------------------------------------------
