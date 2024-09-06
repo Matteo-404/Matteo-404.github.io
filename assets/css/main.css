@@ -1524,6 +1524,15 @@ section,
   }
 }
 
+.li-image {
+  display: block;
+  float: right; /*aligns the image to the right of the list item */
+  margin-left: 10px; /*add some space between the test and the image */
+  width: 75px; /*adjust the width as needed */
+  height: fit-content; /* to keep aspect ratio */
+}
+
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
@@ -1852,6 +1861,10 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 20px;
+}
+
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
@@ -1940,6 +1953,36 @@ section,
   padding-bottom: 15px;
 }
 
+.portfolio-details .portfolio-info ul .li-with-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* align items at the end of the row */
+  align-items: center; /* center items veritcally */
+  padding-bottom: 15px;
+}
+
+/* breakpoint for the image to go below... ADJUST */
+@media (max-width: 400px) { 
+  .portfolio-details .portfolio-info ul .li-with-image {
+    flex-direction: column; /* Change to vertical layout */
+    align-items: flex-start; /* Align items to the left */
+  }
+  .portfolio-details .portfolio-info ul .li-image {
+    margin-left: 0; /* Remove left margin for vertical alignment */
+    margin-top: 10px; /* Add some top margin for spacing */
+    margin-bottom: 10px; /* Add some top margin for spacing */
+  }
+}
+
+.portfolio-details .portfolio-info ul .li-with-image span {
+  flex-grow: 1; /* Allow the text to take available space */
+}
+
+.portfolio-details .portfolio-info ul span {
+  display: flex;
+  flex-direction: column;
+}
+
 .portfolio-details .portfolio-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
@@ -2023,6 +2066,8 @@ section,
   margin: 0 0 15px 0 0 0;
   padding: 0;
 }
+
+/*XXXXXXXXXXXXXXXXX*/
 
 /*--------------------------------------------------------------
 # Service Details Section
