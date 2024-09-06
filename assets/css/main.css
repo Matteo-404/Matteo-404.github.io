@@ -1517,6 +1517,13 @@ section,
   bottom: 10px;
 }
 
+/* Add padding only for desktop screens (large screens and above) */
+@media (min-width: 992px) {  /* Bootstrap's lg breakpoint starts at 992px */
+  .portfolio-description {
+    padding-right: 20px; /* Adjust the padding value as needed */
+  }
+}
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
