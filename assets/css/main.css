@@ -1858,12 +1858,24 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 20px;
 }
+
+/*
+.portfolio-details .swiper-slide{
+  display: flex;
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+  padding-top: 0;
+  margin: 0 auto;
+} */
 
 .portfolio-details .portfolio-details-slider img {
   max-height: 65vh; /* tune here to make the max image height smaller */
@@ -1877,7 +1889,7 @@ section,
 }
 
 .portfolio-details .swiper-wrapper {
-  height: auto;
+  height: 100%;
 }
 
 .portfolio-details .swiper-button-prev,
