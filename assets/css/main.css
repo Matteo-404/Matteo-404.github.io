@@ -1465,11 +1465,13 @@ section,
 
 /* this is the styling of the info box "portfolio-info" */
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;    /* starts out completely transparent.... we'll set it to show up on hover later */
+  opacity: 1; /*to have the on hover display, remove these two first lines and uncomment the next two. */
+  bottom: 10px;
+  /*opacity: 0;    /* starts out completely transparent.... we'll set it to show up on hover later */
+  /*bottom: 0;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 0;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
   z-index: 3;
   transition: all ease-in-out 0.3s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
@@ -1501,6 +1503,20 @@ section,
   line-height: 0;
 }
 
+.portfolio .portfolio-item .portfolio-info .preview-link-pers {
+  position: absolute;
+  right: 20px;
+  max-width: 35px;
+  top: 20px;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link-pers2 {
+  position: absolute;
+  right: 0px;
+  max-width: 40px;
+  top: 70px;
+}
+
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: var(--accent-color);
@@ -1516,6 +1532,22 @@ section,
   opacity: 1;
   bottom: 10px;
 }
+
+/* Add padding only for desktop screens (large screens and above) */
+@media (min-width: 992px) {  /* Bootstrap's lg breakpoint starts at 992px */
+  .portfolio-description {
+    padding-right: 20px; /* Adjust the padding value as needed */
+  }
+}
+
+.li-image {
+  display: block;
+  float: right; /*aligns the image to the right of the list item */
+  margin-left: 10px; /*add some space between the test and the image */
+  width: 75px; /*adjust the width as needed */
+  height: fit-content; /* to keep aspect ratio */
+}
+
 
 /*--------------------------------------------------------------
 # Pricing Section
@@ -1842,15 +1874,48 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.portfolio-details {
+  padding-top: 20px;
+}
+
+/*
+.portfolio-details .swiper-slide{
+  display: flex;
+  background-color: blue;
+  height: 100%;
   width: 100%;
+  padding-top: 0;
+  margin: 0 auto;
+} */
+
+.swiper-slide .slider-legend {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #fff; /* Semi-transparent black background */
+  color: #000; /* White text */
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  max-height: 65vh; /* tune here to make the max image height smaller */
+                     /* as a percentage of the page's vertical dim */
+  height: auto; /* to maintain Aspect ratio */
+  width: auto;
+  display: block;
+  margin: 0 auto; /*centers the image*/ 
+
+  max-width: 100%; /* so that it shrinks if the screen does... */
 }
 
 .portfolio-details .swiper-wrapper {
-  height: auto;
+  height: 100%;
 }
 
 .portfolio-details .swiper-button-prev,
@@ -1933,6 +1998,36 @@ section,
   padding-bottom: 15px;
 }
 
+.portfolio-details .portfolio-info ul .li-with-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* align items at the end of the row */
+  align-items: center; /* center items veritcally */
+  padding-bottom: 15px;
+}
+
+/* breakpoint for the image to go below... ADJUST */
+@media (max-width: 400px) { 
+  .portfolio-details .portfolio-info ul .li-with-image {
+    flex-direction: column; /* Change to vertical layout */
+    align-items: flex-start; /* Align items to the left */
+  }
+  .portfolio-details .portfolio-info ul .li-image {
+    margin-left: 0; /* Remove left margin for vertical alignment */
+    margin-top: 10px; /* Add some top margin for spacing */
+    margin-bottom: 10px; /* Add some top margin for spacing */
+  }
+}
+
+.portfolio-details .portfolio-info ul .li-with-image span {
+  flex-grow: 1; /* Allow the text to take available space */
+}
+
+.portfolio-details .portfolio-info ul span {
+  display: flex;
+  flex-direction: column;
+}
+
 .portfolio-details .portfolio-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
@@ -1965,7 +2060,7 @@ section,
 .portfolio-details .portfolio-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  background: color-mix(in srgb, var(--default-color), transparent 80%);
   margin-bottom: 50px;
 }
 
@@ -2016,6 +2111,8 @@ section,
   margin: 0 0 15px 0 0 0;
   padding: 0;
 }
+
+/*XXXXXXXXXXXXXXXXX*/
 
 /*--------------------------------------------------------------
 # Service Details Section
