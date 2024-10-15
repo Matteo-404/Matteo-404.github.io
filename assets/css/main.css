@@ -1465,11 +1465,13 @@ section,
 
 /* this is the styling of the info box "portfolio-info" */
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;    /* starts out completely transparent.... we'll set it to show up on hover later */
+  opacity: 1; /*to have the on hover display, remove these two first lines and uncomment the next two. */
+  bottom: 10px;
+  /*opacity: 0;    /* starts out completely transparent.... we'll set it to show up on hover later */
+  /*bottom: 0;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 0;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
   z-index: 3;
   transition: all ease-in-out 0.3s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
@@ -1499,6 +1501,20 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   transition: 0.3s;
   line-height: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link-pers {
+  position: absolute;
+  right: 20px;
+  max-width: 35px;
+  top: 20px;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link-pers2 {
+  position: absolute;
+  right: 0px;
+  max-width: 40px;
+  top: 70px;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
