@@ -1465,15 +1465,15 @@ section,
 
 /* this is the styling of the info box "portfolio-info" */
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 1; /*to have the on hover display, remove these two first lines and uncomment the next two. */
+  /*opacity: 1; /*to have the on hover display, remove these two first lines and uncomment the next two. */
   bottom: 10px;
-  /*opacity: 0;    /* starts out completely transparent.... we'll set it to show up on hover later */
-  /*bottom: 0;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
+  opacity: 0.5;    /* starts out completely transparent.... we'll set it to show up on hover later */
+  bottom: 5px;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
   position: absolute;
   left: 30px;
   right: 30px;
   z-index: 3;
-  /*transition: all ease-in-out 0.3s;*/
+  transition: all ease-in-out 0.3s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
   padding: 15px;
 } /* great! the above makes sense */
