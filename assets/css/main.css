@@ -1468,7 +1468,7 @@ section,
   /*opacity: 1; /*to have the on hover display, remove these two first lines and uncomment the next two. */
   bottom: 10px;
   opacity: 0.5;    /* starts out completely transparent.... we'll set it to show up on hover later */
-  bottom: 5px;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
+  bottom: 10px;  /*also starts on the bottom so that when it appears, if we make it higher, there's a movement transition! */
   position: absolute;
   left: 30px;
   right: 30px;
@@ -1530,7 +1530,7 @@ section,
 /* this is the thing that makes the info show up on hover */
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
-  bottom: 10px;
+  bottom: 17px;
 }
 
 /* Add padding only for desktop screens (large screens and above) */
