@@ -46,6 +46,10 @@ img {
   max-width: 100%;
 }
 
+figure {
+  margin: 0;
+}
+
 a {
   color: inherit;
 }
@@ -178,9 +182,29 @@ select {
 .hero__layout {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.95fr);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) clamp(18rem, 30vw, 22rem);
+  grid-template-areas:
+    "intro portrait"
+    "details portrait";
+  align-items: start;
   gap: clamp(2rem, 4vw, 4rem);
+}
+
+.hero__intro {
+  grid-area: intro;
+}
+
+.hero__details {
+  grid-area: details;
+  display: grid;
+  gap: 1.8rem;
+  align-content: start;
+}
+
+.hero__details .lede,
+.hero__details .hero__actions,
+.hero__details .hero__notes {
+  margin-top: 0;
 }
 
 .eyebrow {
@@ -257,6 +281,12 @@ select {
   color: var(--ink);
 }
 
+.button--tertiary {
+  border-color: var(--line);
+  background: var(--surface-dark);
+  color: #fff;
+}
+
 .text-link {
   color: var(--ink);
   text-decoration-thickness: 1px;
@@ -292,12 +322,18 @@ select {
 }
 
 .hero__portrait {
+  grid-area: portrait;
   display: grid;
   gap: 0.9rem;
+  width: 100%;
+  max-width: 22rem;
+  justify-self: end;
+  align-self: start;
 }
 
 .portrait-frame {
   position: relative;
+  width: 100%;
   aspect-ratio: 0.8;
   overflow: hidden;
   border-radius: var(--radius);
@@ -690,12 +726,31 @@ select {
 }
 
 @media (max-width: 980px) {
-  .hero__layout,
   .intro-grid,
   .contact-panel,
   .project-hero__layout,
   .project-layout {
     grid-template-columns: 1fr;
+  }
+
+  .hero__layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "portrait"
+      "details";
+    gap: 1.5rem;
+  }
+
+  .hero__portrait {
+    max-width: min(100%, 17rem);
+    justify-self: start;
+  }
+
+  .hero__details .lede,
+  .hero__details .hero__actions,
+  .hero__details .hero__notes {
+    margin-top: 0;
   }
 
   .resume-grid,
@@ -776,6 +831,10 @@ select {
   .portrait-caption,
   .site-footer__inner {
     flex-direction: column;
+  }
+
+  .hero__portrait {
+    max-width: min(100%, 14rem);
   }
 }
 

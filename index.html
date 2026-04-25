@@ -13,10 +13,10 @@
   <header class="site-header" data-header>
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
-        <span class="brand__mark">MC</span>
+        <!--span class="brand__mark"></span-->
         <span class="brand__text">
           <span class="brand__name">Matteo Cirillo</span>
-          <span class="brand__role">Microengineering portfolio</span>
+          <span class="brand__role">Projects Portfolio</span>
         </span>
       </a>
 
@@ -29,7 +29,7 @@
         <a href="#resume">Resume</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+        <!--a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a-->
       </nav>
     </div>
   </header>
@@ -37,30 +37,45 @@
   <main>
     <section class="hero">
       <div class="shell hero__layout">
-        <div>
-          <p class="eyebrow">Portfolio</p>
+        <div class="hero__intro">
+          <!--p class="eyebrow">Portfolio</p-->
           <h1>Matteo Cirillo</h1>
-          <p class="hero__subtitle">Quantum hardware, microfabrication and hands-on prototyping.</p>
+          <p class="hero__subtitle">NASA JPL Graduate Fellow | EPFL MSc Student in Microengineering</p>
+        </div>
+
+        <figure class="hero__portrait">
+          <div class="portrait-frame">
+            <img src="assets/img/optimized/profile-portrait.jpg" alt="Portrait of Matteo Cirillo" width="874" height="1200" fetchpriority="high">
+          </div>
+          <!--figcaption class="portrait-caption">
+            <span>Research-minded hardware engineer with a strong bias for building and testing.</span>
+            <span>LinkedIn: <a href="https://www.linkedin.com/in/matteo-cirillo-25a835237" target="_blank" rel="noopener noreferrer">matteo-cirillo</a></span>
+          </figcaption-->
+        </figure>
+
+        <div class="hero__details">
           <p class="lede">
-            I work on precise experimental systems, from superconducting circuits and acousto-optic hardware to
-            autonomous platforms and product prototypes. This site brings together the projects, research experience
-            and resume highlights that best show how I build.
+            EPFL Master student specializing in nanotechnology, with over a year of microfabrication experience in 
+            cleanroom environments. Held two research assistant roles working on all round design, fabrication, and 
+            characterization of MEMS devices for Scanning Probe Microscopy and Quantum Computing. Further 
+            completed various internships at ETH Zurich, Single Quantum, and NASA JPL, all with a primary focus on 
+            superconducting devices and photonics.
           </p>
 
           <div class="hero__actions">
-            <a class="button button--primary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Open resume</a>
-            <a class="button button--secondary" href="#projects">Selected projects</a>
-            <a class="text-link" href="mailto:matteo.cirillo@epfl.ch">matteo.cirillo@epfl.ch</a>
+            <a class="button button--primary" href="#resume">Resume</a>
+            <a class="button button--tertiary" href="#projects">Selected projects</a>
+            <a class="button button--secondary" href="#contact">Contact</a>
           </div>
 
           <ul class="hero__notes">
             <li>
               <strong>Focus</strong>
-              <span>Microfabrication, optics, mechanical integration and prototype build.</span>
+              <span>Microfabrication, MEMS, photonics, and superconducting detectors.</span>
             </li>
             <li>
               <strong>Recent environments</strong>
-              <span>EPFL HQC, PSI / ETH Zurich and the EPFL Racing Team.</span>
+              <span>NASA Jet Propulsion Laboratory, Caltech, Single Quantum, EPFL, ETH Zurich, PSI, and TU Delft.</span>
             </li>
             <li>
               <strong>Based in</strong>
@@ -68,20 +83,10 @@
             </li>
           </ul>
         </div>
-
-        <figure class="hero__portrait">
-          <div class="portrait-frame">
-            <img src="assets/img/optimized/profile-portrait.jpg" alt="Portrait of Matteo Cirillo" width="874" height="1200" fetchpriority="high">
-          </div>
-          <figcaption class="portrait-caption">
-            <span>Research-minded hardware engineer with a strong bias for building and testing.</span>
-            <span>LinkedIn: <a href="https://www.linkedin.com/in/matteo-cirillo-25a835237" target="_blank" rel="noopener noreferrer">matteo-cirillo</a></span>
-          </figcaption>
-        </figure>
       </div>
     </section>
 
-    <section class="section band band--tint" id="about">
+    <!--section class="section band band--tint" id="about">
       <div class="shell intro-grid">
         <div class="section-heading">
           <p class="eyebrow">About</p>
@@ -115,16 +120,18 @@
           <p>Comfortable moving between CAD, fabrication, debugging and documentation to get a design working end to end.</p>
         </article>
       </div>
-    </section>
+    </section-->
 
     <section class="section" id="resume">
       <div class="shell section-top">
         <div class="section-heading">
-          <p class="eyebrow">Resume</p>
-          <h2>A concise view of the path so far.</h2>
+          <!--p class="eyebrow">Resume</p-->
+          <h2>Curriculum Vitae</h2>
           <p>For the full document, open the PDF. The snapshot below is meant to make the main story readable at a glance.</p>
         </div>
-        <a class="button button--secondary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+        <div class = "section-heading">
+          <a class="button button--primary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+        </div>
       </div>
 
       <div class="shell resume-grid">
