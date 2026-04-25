@@ -4,989 +4,309 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Matteo's Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons >
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"-->
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <title>Matteo Cirillo | Portfolio</title>
+  <meta name="description" content="Portfolio of Matteo Cirillo, featuring resume highlights, engineering experience, and selected projects in quantum hardware, microfabrication, and prototyping.">
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
-
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo next to the site name -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Projects Showcase</h1>
+<body>
+  <header class="site-header" data-header>
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
+        <span class="brand__mark">MC</span>
+        <span class="brand__text">
+          <span class="brand__name">Matteo Cirillo</span>
+          <span class="brand__role">Microengineering portfolio</span>
+        </span>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <!--li><a href="#hero" class="active">Home<br></a></li-->
-          <li><a href="#about">About</a></li>
-          <!--li><a href="#services">Services</a></li-->
-          <li><a href="#portfolio">Portfolio</a></li>
-          <!--li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li-->
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
 
+      <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+      </nav>
     </div>
   </header>
 
-  <main class="main">
+  <main>
+    <section class="hero">
+      <div class="shell hero__layout">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1>Matteo Cirillo</h1>
+          <p class="hero__subtitle">Quantum hardware, microfabrication and hands-on prototyping.</p>
+          <p class="lede">
+            I work on precise experimental systems, from superconducting circuits and acousto-optic hardware to
+            autonomous platforms and product prototypes. This site brings together the projects, research experience
+            and resume highlights that best show how I build.
+          </p>
 
-
-
-    <!-- Hero Section : where you present only yourself.-->
-    <!--section id="hero" class="hero section hero-background">
-
-      <!--img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
-
-      <div class="wraparoundclass container d-flex flex-row align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="hero_pic_container">
-          <img src="./assets/img/profile_pic.JPG" alt="Matteo Cirillo Profile picture" class="hero-pic">
-        </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="heroTitle">Matteo Cirillo</h1>
-          <p class="section__text__p2">EPFL MSc Student in Microengineering & Quantum Science</p>
-          <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Resume</button>
-            <button class="btn btn-color-1" onclick="location.href='#contact'"> Contact Info</button>
-            <img src="./assets/img/LinkedIn_icon_circle.svg" alt="My LinkedIn profile" class="myIcon" onclick="location.href='https://www.linkedin.com/in/matteo-cirillo-25a835237'">
-          </div>
-        </div>
-      </div>
-      <!--div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">  
-        <h2>I am Morgan Freeman</h2>
-        <p><span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!--section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/img/profile_pic.JPG" alt="Matteo Cirillo profile picture" class="roundEdgeImage"/>
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Matteo Cirillo</h1>
-        <p class="section__text__p2">EPFL MSc Student in Microengineering & Quantum Science</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-          <img
-            src="./assets/img/LinkedIn_icon_circle.svg"
-            alt="My LinkedIn profile"
-            class="icon2"
-            onclick="location.href='https://www.linkedin.com/in/matteo-cirillo-25a835237'"
-          />
-        </div>
-        <!--div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon2"
-            onclick="location.href='https://www.linkedin.com/in/matteo-cirillo-25a835237'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section-->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container"> <!--data-aos="fade-up" data-aos-delay="100"> <!--graphic box-->
-
-        <div class="row gy-4"> <!--actual container for content inside-->
-          <div class="col-md-6"> <!--picture & skills-->
-
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="assets/img/profile_pic.JPG" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-7 about-info">
-                <!--p><strong class="myTitle">Matteo Cirillo </strong></p-->
-                <h4>Matteo Cirillo</h4>
-                <p class="section__text__p2"><strong>EPFL MSc Student </strong> <span>in Microengineering & Quantum Science</span></p>
-                <!--p><strong> Born : </strong> <span>09.10.2000</span></p>
-                <p><strong> Nationality : </strong> <span>Switzerland</span></p-->
-                
-                <!--div class="btn-container">
-                  <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
-                    Resume
-                  </button>
-                  <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact
-                  </button>
-                  <img src="./assets/img/LinkedIn_icon_circle.svg" alt="My LinkedIn profile" class="icon2" onclick="location.href='https://www.linkedin.com/in/matteo-cirillo-25a835237'">
-                </div-->
-                
-              </div>
-            </div>
-            
-            
-            <div class="btn-container">
-              <!-- DO NOT USE BUTTON tags... can't wheel click in a new tab...>
-              <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
-                Resume
-              </button>
-              <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact
-              </button>
-              <img src="./assets/img/LinkedIn_icon_circle.svg" alt="My LinkedIn profile" class="icon2" onclick="location.href='https://www.linkedin.com/in/matteo-cirillo-25a835237'"-->
-
-              <!-- INSTEAD :-->
-              <a href="./assets/resume.pdf" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
-                Resume
-              </a>
-              <a href="./#contact" class="btn btn-color-1">
-                Contact
-              </a>
-              <a href="https://www.linkedin.com/in/matteo-cirillo-25a835237" class="icon2" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/img/LinkedIn_icon_circle.svg" alt="My LinkedIn profile" class="icon2">
-              </a>
-            </div>
-
-          
-            <!--div class="skills-content skills-animation">
-
-              <h5>Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div-->
+          <div class="hero__actions">
+            <a class="button button--primary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Open resume</a>
+            <a class="button button--secondary" href="#projects">Selected projects</a>
+            <a class="text-link" href="mailto:matteo.cirillo@epfl.ch">matteo.cirillo@epfl.ch</a>
           </div>
 
-          <div class="col-md-6"> <!--text-->
-            <div class="about-me">
-              <h4>About</h4>
-              <p>
-                EPFL microengineering student who graduated Bachelor of Science in 2022 after 
-                an exchange at the Delft TU. Worked 6 months as a private school teacher and 
-                member of the EPFL racing team, before fulfilling military obligations in early 2023.
-              </p>
-              <p>
-                Currently pursuing a masters degree in microengineering and quantum science at EPFL, with 
-                a particular focus on microfabrication. I conducted a first semester project on fabrication of 
-                superconducting resonators for more robust qubits, and am currently working on a 
-                second semester thesis, fabricating AFM cantilevers for scanning electrochemical microscopy applications.
-              </p>
-              <p>
-                Summer 2024 intern at ETH Zürich and the Paul Scherrer Institute (PSI), working on integrating acousto-optic 
-                modulators for the Ion Trap Quantum Computing (ITQC) group of Prof. C. Hempel.
-              </p>
-            </div>
+          <ul class="hero__notes">
+            <li>
+              <strong>Focus</strong>
+              <span>Microfabrication, optics, mechanical integration and prototype build.</span>
+            </li>
+            <li>
+              <strong>Recent environments</strong>
+              <span>EPFL HQC, PSI / ETH Zurich and the EPFL Racing Team.</span>
+            </li>
+            <li>
+              <strong>Based in</strong>
+              <span>Lausanne, Switzerland.</span>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="hero__portrait">
+          <div class="portrait-frame">
+            <img src="assets/img/optimized/profile-portrait.jpg" alt="Portrait of Matteo Cirillo" width="874" height="1200" fetchpriority="high">
           </div>
-        </div>
-
+          <figcaption class="portrait-caption">
+            <span>Research-minded hardware engineer with a strong bias for building and testing.</span>
+            <span>LinkedIn: <a href="https://www.linkedin.com/in/matteo-cirillo-25a835237" target="_blank" rel="noopener noreferrer">matteo-cirillo</a></span>
+          </figcaption>
+        </figure>
       </div>
+    </section>
 
-    </section><!-- /About Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title"> <!-- data-aos="fade-up"-->
-        <h2>Portfolio</h2>
-        <p>Below is a showcase of my various engineering projects, which I have come to realise in my course, internships and free time</p>
-      </div><!-- End Section Title -->
-
-      <div class="container"> <!--the actual portfolio container-->
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <!--filters for project display-->
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="10">
-            <li data-filter="*" class="filter-active">All</li>
-            <!--li data-filter=".filter-app">BSc EPFL</li>  <!--each filer has a "data-filter" which must be put in the class of the portfolio item that should be displayed in that filter-->
-            <!--li data-filter=".filter-product">TU Delft</li-->
-            <li data-filter=".filter-mscepfl">MSc EPFL</li>
-            <li data-filter=".filter-internships">Internships</li>
-          </ul><!-- End Portfolio Filters -->
-          
-          <!--portfolio showcase-->
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="100">
-            <!--should add navigations styling so that the mobile user knows its clickable-->
-            
-
-            <!--EXACT SAME BUT USING A ANCHOR TAG <a> to check if behaves like a link or not... -> IT WORKS-->
-            <!--a portfolio item. put the chosen "filter-..." in the class-->
-            <!--MAKE A PORTFOLIO-DETAILS page for each item... BUT FORMAT THE EXISTING ONE FIRST FOR CONSISTENCY-->
-            <a href="portfolio-details_1_pds1.html" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mscepfl">
-              <img src="assets/img/portfolio/1_Semester1/showcase3.png" class="img-fluid" alt=""> <!--portfolio image-->
-              <div class="portfolio-info"> 
-                <h4>Fabrication of Niobium Transmons</h4>
-                <p>HQC group at EPFL</p>
-                <img src="assets/img/cursor-click.png" class="preview-link-pers">
-                <p class="glightbox preview-link-pers2">more...</p>
-                <!--a href="assets/img/portfolio/PSI/boardDisplay.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a-->
-                <!--a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a-->
-              </div>
-            </a><!-- End Portfolio Item -->
-
-            <!--EXACT SAME BUT USING A ANCHOR TAG <a> to check if behaves like a link or not... -> IT WORKS-->
-            <!--a portfolio item. put the chosen "filter-..." in the class-->
-            <!--MAKE A PORTFOLIO-DETAILS page for each item... BUT FORMAT THE EXISTING ONE FIRST FOR CONSISTENCY-->
-            <a href="portfolio-details_A_PSI.html" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-internships">
-              <img src="assets/img/portfolio/A_PSI/showcase.png" class="img-fluid" alt=""> <!--portfolio image-->
-              <div class="portfolio-info"> 
-                <h4>AOM Board for Trapped Ion Quantum Computing</h4>
-                <p>ITQC group at the Paul Scherrer Institute</p>
-                <img src="assets/img/cursor-click.png" class="preview-link-pers">
-                <p class="glightbox preview-link-pers2">more...</p>
-                <!--a href="assets/img/portfolio/PSI/boardDisplay.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a-->
-                <!--a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a-->
-              </div>
-            </a><!-- End Portfolio Item -->
-
-
-            <!--EXACT SAME BUT USING A ANCHOR TAG <a> to check if behaves like a link or not... -> IT WORKS-->
-            <!--a portfolio item. put the chosen "filter-..." in the class-->
-            <!--MAKE A PORTFOLIO-DETAILS page for each item... BUT FORMAT THE EXISTING ONE FIRST FOR CONSISTENCY-->
-            <a href="portfolio-details_B_RacingTeam.html" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mscepfl">
-              <img src="assets/img/portfolio/B_RacingTeam/showcase.png" class="img-fluid" alt=""> <!--portfolio image-->
-              <div class="portfolio-info"> 
-                <h4>Test bench for self-driving software</h4>
-                <p>EPFL Racing Team</p>
-                <img src="assets/img/cursor-click.png" class="preview-link-pers">
-                <p class="glightbox preview-link-pers2">more...</p>
-                <!--a href="assets/img/portfolio/PSI/boardDisplay.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a-->
-                <!--a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a-->
-              </div>
-            </a><!-- End Portfolio Item -->
-            
-            <!--EXACT SAME BUT USING A ANCHOR TAG <a> to check if behaves like a link or not... -> IT WORKS-->
-            <!--a portfolio item. put the chosen "filter-..." in the class-->
-            <!--MAKE A PORTFOLIO-DETAILS page for each item... BUT FORMAT THE EXISTING ONE FIRST FOR CONSISTENCY-->
-            <a href="portfolio-details_C_SoClean.html" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mscepfl">
-              <img src="assets/img/portfolio/C_SoClean/showcase.png" class="img-fluid" alt=""> <!--portfolio image-->
-              <div class="portfolio-info"> 
-                <h4>Autonomous Solar Panel Cleaner</h4>
-                <p>Class of Product design and Systems engineering</p>
-                <img src="assets/img/cursor-click.png" class="preview-link-pers">
-                <p class="glightbox preview-link-pers2">more...</p>
-                <!--a href="assets/img/portfolio/PSI/boardDisplay.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a-->
-                <!--a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a-->
-              </div>
-            </a><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+    <section class="section band band--tint" id="about">
+      <div class="shell intro-grid">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Engineering that stays close to the bench.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            My background sits at the intersection of microengineering and quantum science, with a strong interest in
+            fabrication, optics and experimental hardware. I enjoy projects where physical constraints matter and where
+            design choices have to survive contact with the lab, workshop or test track.
+          </p>
+          <p>
+            The work collected here ranges from superconducting resonators and trapped-ion optics to autonomous
+            prototypes and mechanical product design. Across all of it, the common thread is building reliable systems
+            with careful attention to detail, manufacturability and performance.
+          </p>
         </div>
       </div>
 
-    </section><!-- /Portfolio Section -->
+      <div class="shell focus-grid">
+        <article class="focus-card">
+          <h3>Research hardware</h3>
+          <p>Cleanroom processes, packaging, optics and characterization for experimental quantum systems.</p>
+        </article>
+        <article class="focus-card">
+          <h3>System integration</h3>
+          <p>Mechanical design and hardware integration for complete prototypes, from bench setups to mobile platforms.</p>
+        </article>
+        <article class="focus-card">
+          <h3>Build mindset</h3>
+          <p>Comfortable moving between CAD, fabrication, debugging and documentation to get a design working end to end.</p>
+        </article>
+      </div>
+    </section>
 
+    <section class="section" id="resume">
+      <div class="shell section-top">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>A concise view of the path so far.</h2>
+          <p>For the full document, open the PDF. The snapshot below is meant to make the main story readable at a glance.</p>
+        </div>
+        <a class="button button--secondary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+      </div>
 
-    <!-- Resume Section> <!--add logos of things>
-    <section id="resume" class="resume section">
+      <div class="shell resume-grid">
+        <section class="resume-column" aria-labelledby="experience-title">
+          <h3 id="experience-title">Research and experience</h3>
+          <article class="resume-entry">
+            <span class="resume-entry__period">Jul 2024 - Feb 2025</span>
+            <span class="resume-entry__place">Hybrid Quantum Circuits group, EPFL</span>
+            <p>Semester project on superconducting resonators, focused on fabrication flow, packaging and cryogenic characterization.</p>
+          </article>
+          <article class="resume-entry">
+            <span class="resume-entry__period">Summer 2024</span>
+            <span class="resume-entry__place">PSI / ETH Zurich</span>
+            <p>Research internship prototyping a compact double-pass acousto-optic modulation board for trapped-ion quantum computing.</p>
+          </article>
+          <article class="resume-entry">
+            <span class="resume-entry__period">Jul 2022 - Feb 2024</span>
+            <span class="resume-entry__place">EPFL Racing Team</span>
+            <p>Driverless hardware work spanning RC test benches, sensor integration and full-scale vehicle constraints.</p>
+          </article>
+        </section>
 
-      <!-- Section Title >
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <!--p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title >
+        <section class="resume-column" aria-labelledby="education-title">
+          <h3 id="education-title">Education</h3>
+          <article class="resume-entry">
+            <span class="resume-entry__period">2023 - 2025</span>
+            <span class="resume-entry__place">MSc in Microengineering and Quantum Science</span>
+            <p>EPFL, with a focus on microfabrication and quantum technologies.</p>
+          </article>
+          <article class="resume-entry">
+            <span class="resume-entry__period">2021 - 2022</span>
+            <span class="resume-entry__place">Academic exchange year</span>
+            <p>TU Delft, broadening the engineering base through an international study year.</p>
+          </article>
+          <article class="resume-entry">
+            <span class="resume-entry__period">2019 - 2022</span>
+            <span class="resume-entry__place">BSc in Microengineering</span>
+            <p>EPFL, building the core in mechanics, electronics, fabrication and physical systems.</p>
+          </article>
+        </section>
 
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Matteo Cirillo</h4>
-              <p><em>EPFL MSc student in Microengineering and Quantum science. My major is in microfabrication, with an additional focus on quantum science an technology. I have a further interest in optics, which motivated my internship at PSI over the summer of 2024.</em></p>
-              
-              <div class="skills-content skills-animation">
-                <div class="progress">
-                  <span class="skill"><span>English</span> <i class="val">CEFR C2</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"><span>French</span> <i class="val">Native</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"><span>Italian</span> <i class="val">Native</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"><span>German</span> <i class="val">CEFR B2</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-              </div>
-              <!--ul>
-                <li>1806 St. Légier, Switzerland</li>
-                <li>+41 79 685 34 73</li>
-                <li>matteo.c@bluewin.ch</li>
-                <li>matteo.cirillo@epfl.ch</li>
-              </ul>
-            </div><!-- Edn Resume Item >
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>MSc in Microengineering & Quantum Science</h4>
-              <h5>2023 - 2025</h5>
-              <p><em>EPFL - Swiss Federal Institute of Technology</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item>
-
-            <div class="resume-item">
-              <h4>Academic Exchange year</h4>
-              <h5>2021 - 2022</h5>
-              <p><em>TU Delft - Technische Universiteit Delft</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item >
-
-            <div class="resume-item">
-              <h4>BSc in Microengineering</h4>
-              <h5>2019 - 2022</h5>
-              <p><em>EPFL - Swiss Federal Institute of Technology</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item >
-
+        <section class="resume-column" aria-labelledby="skills-title">
+          <h3 id="skills-title">Core strengths</h3>
+          <div class="tag-list" aria-label="Skill tags">
+            <span class="tag">Microfabrication</span>
+            <span class="tag">Optomechanics</span>
+            <span class="tag">CAD</span>
+            <span class="tag">Prototype build</span>
+            <span class="tag">SEM metrology</span>
+            <span class="tag">Characterization</span>
+            <span class="tag tag--accent">Quantum hardware</span>
+            <span class="tag tag--accent">System integration</span>
+            <span class="tag tag--accent">Documentation</span>
           </div>
+          <article class="resume-entry">
+            <span class="resume-entry__place">Working style</span>
+            <p>Careful design, practical execution, and a preference for testing ideas in the real setup as early as possible.</p>
+          </article>
+        </section>
+      </div>
+    </section>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Experience</h3>
-            <div class="resume-item">
-              <h4>Research Assistant</h4>
-              <h5>Jul 2024 - Sep 2024</h5>
-              <p><em>PSI - Paul Scherrer Institute </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item >
+    <section class="section band band--contrast" id="projects">
+      <div class="shell section-heading">
+        <p class="eyebrow">Selected projects</p>
+        <h2>Project pages with more detail, images and context.</h2>
+        <p>Each thumbnail opens a focused case-study page with the project background, what I built, and the main outcomes.</p>
+      </div>
 
-            <div class="resume-item">
-              <h4>Teaching Assistant</h4>
-              <h5>Sep 2020 - Present</h5>
-              <p><em>EPFL - Swiss Federal Institute of Technology</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item >
-
-            <div class="resume-item">
-              <h4>Private School Teacher</h4>
-              <h5>Jul 2022 - Jan 2023</h5>
-              <p><em>INPV - Institut Privé Voltaire</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item>
-
+      <div class="shell project-grid">
+        <a class="project-card" href="portfolio-details_1_pds1.html">
+          <div class="project-card__media">
+            <img src="assets/img/optimized/transmon-hero.jpg" alt="Packaged superconducting chip mounted on a sample holder" width="1400" height="788" decoding="async">
           </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-
-    <!-- Services Section >
-    <section id="services" class="services section">
-
-      <!-- Section Title >
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title >
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+          <div class="project-card__body">
+            <span class="project-card__meta">EPFL HQC group</span>
+            <h3>Fabrication of Niobium Transmons</h3>
+            <p>Semester research project on superconducting resonators, from cleanroom flow to dilution-fridge measurements.</p>
+            <div class="project-tags">
+              <span class="tag">Research</span>
+              <span class="tag">Microfabrication</span>
+              <span class="tag">Quantum devices</span>
             </div>
-          </div><!-- End Service Item >
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item >
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item >
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item >
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item >
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item >
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Stats Section >
-    <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item >
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item >
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item >
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
-              <p>Awards</p>
-            </div>
-          </div><!-- End Stats Item >
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Pricing Section >
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title >
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title >
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 gx-lg-5">
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Portrait Photography</h3>
-              <h4>$160.00</h4>
-            </div>
-          </div><!-- End Pricing Item >
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Fashion Photography</h3>
-              <h4>$300.00</h4>
-            </div>
-          </div><!-- End Pricing Item >
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Sports Photography</h3>
-              <h4>$200.00</h4>
-            </div>
-          </div><!-- End Pricing Item >
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Still Life Photography</h3>
-              <h4>$120.00</h4>
-            </div>
-          </div><!-- End Pricing Item >
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Wedding Photography</h3>
-              <h4>$500.00</h4>
-            </div>
-          </div><!-- End Pricing Item >
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Photojournalism</h3>
-              <h4>$200.00</h4>
-            </div>
-          </div><!-- End Pricing Item >
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section >
-    <section id="faq" class="faq section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="content px-xl-5">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
+            <span class="project-card__arrow">View project -&gt;</span>
           </div>
+        </a>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="faq-container">
-              <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item>
-
-              <div class="faq-item">
-                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item>
-
-              <div class="faq-item">
-                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item>
-
-              <div class="faq-item">
-                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item>
-
-              <div class="faq-item">
-                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item>
-
-            </div>
-
+        <a class="project-card" href="portfolio-details_A_PSI.html">
+          <div class="project-card__media">
+            <img src="assets/img/optimized/psi-hero.jpg" alt="Prototype acousto-optic modulation board on an optical table" width="1600" height="901" decoding="async">
           </div>
+          <div class="project-card__body">
+            <span class="project-card__meta">PSI / ETH Zurich internship</span>
+            <h3>AOM Board for Trapped-Ion Quantum Computing</h3>
+            <p>Compact double-pass acousto-optic hardware designed to save optical-table space without sacrificing flexibility.</p>
+            <div class="project-tags">
+              <span class="tag">Internship</span>
+              <span class="tag">Optics</span>
+              <span class="tag">Prototype design</span>
+            </div>
+            <span class="project-card__arrow">View project -&gt;</span>
+          </div>
+        </a>
+
+        <a class="project-card project-card--racing" href="portfolio-details_B_RacingTeam.html">
+          <div class="project-card__media">
+            <img src="assets/img/optimized/racing-hero.jpg" alt="EPFL Racing Team electric race car" width="1409" height="1000" decoding="async">
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__meta">EPFL Racing Team</span>
+            <h3>Driverless Test Bench and Sensor Integration</h3>
+            <p>Hardware work for autonomous driving, spanning an RC validation platform and full-scale race-car integration.</p>
+            <div class="project-tags">
+              <span class="tag">Student team</span>
+              <span class="tag">Autonomy</span>
+              <span class="tag">Integration</span>
+            </div>
+            <span class="project-card__arrow">View project -&gt;</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="portfolio-details_C_SoClean.html">
+          <div class="project-card__media">
+            <img src="assets/img/optimized/soclean-hero.jpg" alt="Autonomous solar panel cleaner prototype" width="1600" height="901" decoding="async">
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__meta">Product Design and Systems Engineering</span>
+            <h3>Autonomous Solar Panel Cleaner</h3>
+            <p>Team project taking a product concept through planning, design and fabrication of a working prototype.</p>
+            <div class="project-tags">
+              <span class="tag">Product design</span>
+              <span class="tag">Mechanics</span>
+              <span class="tag">Prototype build</span>
+            </div>
+            <span class="project-card__arrow">View project -&gt;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="shell contact-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Easy ways to get in touch.</h2>
+          <p>This public version keeps the contact section simple: email, LinkedIn, and the full resume in PDF form.</p>
         </div>
 
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Testimonials Section >
-    <section id="testimonials" class="testimonials section accent-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item >
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item >
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item >
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item >
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item >
-
-          </div>
-          <div class="swiper-pagination"></div>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Email</h3>
+            <p>Best for direct contact.</p>
+            <a href="mailto:matteo.cirillo@epfl.ch">matteo.cirillo@epfl.ch</a>
+          </article>
+          <article class="contact-card">
+            <h3>Secondary email</h3>
+            <p>Also available here.</p>
+            <a href="mailto:matteo.c@bluewin.ch">matteo.c@bluewin.ch</a>
+          </article>
+          <article class="contact-card">
+            <h3>LinkedIn</h3>
+            <p>Profile and background.</p>
+            <a href="https://www.linkedin.com/in/matteo-cirillo-25a835237" target="_blank" rel="noopener noreferrer">linkedin.com/in/matteo-cirillo-25a835237</a>
+          </article>
+          <article class="contact-card">
+            <h3>Resume PDF</h3>
+            <p>Complete CV with dates and details.</p>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Open the resume</a>
+          </article>
         </div>
-
       </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <!--p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p-->
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Ch. du Clos de Leyterand 25, </p>
-                  <p>1806 St.Légier, Switzerland</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Phone Number</h3>
-                  <p>+41 79 685 34 73</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>matteo.c@bluewin.ch</p>
-                  <p>matteo.cirillo@epfl.ch</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-        </div>
-
-        <!--form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
+    </section>
   </main>
 
-  <footer id="footer" class="footer accent-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Matteo Cirillo</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <!--a href=""><i class="bi bi-twitter-x"></i></a-->
-        <!--a href=""><i class="bi bi-facebook"></i></a-->
-        <!--a href=""><i class="bi bi-instagram"></i></a-->
-        <a href="https://www.linkedin.com/in/matteo-cirillo-25a835237"><i class="bi bi-linkedin"></i></a>
-      </div>
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>&copy; <span data-year>2026</span> Matteo Cirillo</span>
+      <span>Built as a lightweight static site for fast loading on desktop and mobile.</span>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>

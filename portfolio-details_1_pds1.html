@@ -4,283 +4,156 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Matteo's Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons >
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"-->
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <title>Fabrication of Niobium Transmons | Matteo Cirillo</title>
+  <meta name="description" content="Project page for Matteo Cirillo's work on fabrication and characterization of superconducting resonators at EPFL.">
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
-<body class="portfolio-details-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Projects Showcase</h1>
+<body class="project-page">
+  <header class="site-header" data-header>
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
+        <span class="brand__mark">MC</span>
+        <span class="brand__text">
+          <span class="brand__name">Matteo Cirillo</span>
+          <span class="brand__role">Microengineering portfolio</span>
+        </span>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home<br></a></li>
-          <!--li><a href="index.html#about">About</a></li-->
-          <!--li><a href="index.html#services">Services</a></li-->
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <!--li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li-->
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
 
+      <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+      </nav>
     </div>
   </header>
 
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Fabrication of Niobium Transmons</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Fabrication of Niobium Transmons</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up">
-        
-        <!--pictures-->
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              },
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/1_Semester1/showcase2.png" alt="">
-              <div class="slider-legend">SEM micrograph of the fabricated Niobium superconducting resonator.</div>
-            </div>
-            
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/1_Semester1/puck.jpg" alt="">
-              <div class="slider-legend">Packaging of a superconducting chip for mounting in the dilution cryostat.</div>
-            </div>
-            
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/1_Semester1/dilution3.jpg" alt="">
-              <div class="slider-legend">Opened dilution fridge unit used for the characterization of the chips.</div>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/1_Semester1/afterHF13.png" alt="">
-              <div class="slider-legend">SEM micrograph highlighting the quarter wave resonator, inductively coupled to its feedline.</div>
-            </div>
-
-            <!--div class="swiper-slide">
-              <img src="assets/img/portfolio/1_Semester1/" alt="">
-              <div class="slider-legend">blabla3</div>
-            </div-->
-
+  <main>
+    <section class="hero project-hero">
+      <div class="shell project-hero__layout">
+        <div>
+          <a class="back-link" href="index.html#projects">Back to selected projects</a>
+          <p class="eyebrow">EPFL HQC group</p>
+          <h1>Fabrication of Niobium Transmons</h1>
+          <p class="lede">
+            Semester research project on superconducting resonators, focused on fabrication processes, surface
+            preparation and cryogenic characterization for more reproducible high-quality devices.
+          </p>
+          <div class="project-tags" aria-label="Project tags">
+            <span class="tag">Research</span>
+            <span class="tag">Microfabrication</span>
+            <span class="tag">Quantum hardware</span>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
         </div>
 
-        <div class="row justify-content-between gy-4 mt-4">
-          <!--project description box. on the right in desk nav, but on top in mobile nav.-->
-          <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li class="li-with-image">
-                  <span>
-                    <strong>Location</strong> 
-                    <span>Swiss Federal Institute of Technology (EPFL) - Hybrid Quantum Circuits (HQC) group.</span>
-                  </span>
-                  <img src="assets/img/logo_epfl.png" alt="" class="li-image">
-                  <img src="assets/img/portfolio/1_Semester1/Capture.PNG" alt="" class="li-image" style="width: 60px;">
-                </li>
-                <li><strong>Supervisors</strong>Dr. S. Frasca, Prof. P. Scarlino<li></li>
-                <li><strong>Skills</strong>Clean room microfabrication, SEM metrology, chip packaging, dilution cryostat.<li>
-                <li><strong>Project date</strong> Jul 2024 - Feb 2025</li>
-                <!--li><strong>url if needed?</strong> <a href="#">www.example.com</a></li>
-                <li><a href="#" class="btn-visit align-self-start">again, if needed</a></li-->
-              </ul>
-            </div>
+        <figure class="project-cover">
+          <div class="project-cover__frame">
+            <img src="assets/img/optimized/transmon-hero.jpg" alt="Packaged superconducting chip ready for cryogenic testing" width="1400" height="788" fetchpriority="high">
           </div>
+          <figcaption>Packaging of a superconducting chip for mounting in the dilution cryostat.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-          <!--project description. on the left in desktop nav, but on the bottom in mobile nav-->
-          <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up">
-            <div class="portfolio-description">
-              <h2>Project details</h2>
-              <p>
-                <strong>Context</strong>
-              </p>
-
-              <p>
-                Superconducting quantum devices, including qubits, are highly sensitive to various sources of noise which significantly affect their performance. Among these, thermal and magnetic noise are particularly critical, as they degrade the coherence time of the qubits. Over the past decades, substantial efforts have been made to shield the tunable transmon qubit from these types of noise. However, exploring alternative materials and fabrication processes remains an essential area of research to enhance superconducting circuit performance.
-              </p>
-
-              <p>
-                The project consists in the fabrication and characterization of superconducting qubit chips. With the goal of optimizing the manufacturing process to enhance reproducibility and internal quality factor of the resonators.
-              </p>
-              
-              <p>
-                <strong>Results</strong>
-              </p>
-              <p>
-                Over the course of a semester, I explored a variety of cleanroom fabrication processes for making coplanar superconducting resonators, mainly using Niobium or Tantalum capped Niobium thin films. Most of the effort was directed towards the materials interfaces to minimize dielectric losses at low microwave power. To this extent various surface cleaning processes were investigated, both dry and wet, including notably forming gas and oxygen plasma as well as HF etching. Each device is then characterized in a dilution unit so as to monitor the effect on internal quality factors of the fabricated circuits.
-              </p>
-
-              
-              
-              <!--div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Ouais j'ai appris à mettre des guillemets bleus c'est super top!</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <div>
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Jaudoin de la compta</h3>
-                  <h4>Comptable</h4>
-                </div>
-              </div-->
-
-              <div class="testimonial-item">
-                <p>
-                  <strong>Acquired skills :</strong>
-                </p>
-
-                <ul>
-                  <li>Clean room microfabrication (Laser/DUV lithography, wet/dry etching, PVD/CVD, SEM metrology, chip packaging)</li>
-                  <li>Operation of a characterization setup in a Blue Fors dilution cryostat</li>
-                  <li>Manufacturing process optimisation</li>                  
-                </ul>
-
-                <div>
-                  <h3></h3>
-                  <h4></h4>
-                </div>
+    <section class="section">
+      <div class="shell project-layout">
+        <aside class="meta-column">
+          <section class="meta-card">
+            <h3>Project information</h3>
+            <dl class="meta-list">
+              <div>
+                <dt>Location</dt>
+                <dd>EPFL, Hybrid Quantum Circuits group</dd>
               </div>
+              <div>
+                <dt>Timeline</dt>
+                <dd>Jul 2024 - Feb 2025</dd>
+              </div>
+              <div>
+                <dt>Supervision</dt>
+                <dd>Dr. S. Frasca and Prof. P. Scarlino</dd>
+              </div>
+              <div>
+                <dt>Skills</dt>
+                <dd>Cleanroom lithography, etching, SEM metrology, chip packaging and dilution-cryostat operation</dd>
+              </div>
+            </dl>
+          </section>
+        </aside>
 
-              <!--p><strong>
-                ##Should add a place to put images in the text if really needed... in any case this should be concise probably?##
-              </strong></p>
-
-              <p>
-                Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
-              </p>
-
-              <p>
-                Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
-              </p-->
-
-            </div>
+        <section class="rich-copy">
+          <div>
+            <h2>Context</h2>
+            <p>
+              Superconducting quantum devices are highly sensitive to thermal, magnetic and dielectric sources of loss.
+              Beyond circuit design, fabrication details have a strong influence on coherence and device reproducibility,
+              which makes process development a central part of quantum-hardware research.
+            </p>
           </div>
-        </div>
 
+          <div>
+            <h2>What I worked on</h2>
+            <p>
+              The project focused on fabricating and characterizing superconducting resonator chips, mainly using
+              niobium and tantalum-capped niobium thin films. A large part of the effort went into surface preparation
+              and interface quality, with several dry and wet treatments investigated to reduce dielectric loss at low
+              microwave power.
+            </p>
+            <p>
+              Each process iteration was carried through to packaging and cryogenic measurement, so the fabrication
+              choices could be judged against the actual internal quality factor of the resulting circuits.
+            </p>
+          </div>
+
+          <div>
+            <h2>Outcome</h2>
+            <ul>
+              <li>Hands-on experience across the full microfabrication chain, from lithography and etching to SEM inspection and chip packaging.</li>
+              <li>Operation of a Bluefors dilution-cryostat characterization setup for superconducting devices.</li>
+              <li>Practical insight into how process changes at the materials interface affect reproducibility and measured device performance.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section band band--tint">
+      <div class="shell section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h2>Selected visuals</h2>
+        <p>A few views from fabrication and measurement.</p>
       </div>
 
-    </section><!-- /Portfolio Details Section -->
-
+      <div class="shell gallery-grid">
+        <figure class="gallery-item">
+          <img src="assets/img/optimized/transmon-sem.jpg" alt="SEM micrograph of a niobium resonator" width="1333" height="1000" decoding="async">
+          <figcaption>SEM micrograph of a fabricated niobium resonator.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/portfolio/1_Semester1/afterHF13.png" alt="SEM image highlighting a quarter-wave resonator coupled to its feedline" width="1024" height="768" decoding="async">
+          <figcaption>Quarter-wave resonator geometry coupled to its feedline.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/portfolio/1_Semester1/dilution3.jpg" alt="Opened dilution fridge used for chip characterization" width="1139" height="641" decoding="async">
+          <figcaption>Opened dilution fridge used for cryogenic characterization of the chips.</figcaption>
+        </figure>
+      </div>
+    </section>
   </main>
 
-  <footer id="footer" class="footer accent-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Matteo Cirillo</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <!--a href=""><i class="bi bi-twitter-x"></i></a-->
-        <!--a href=""><i class="bi bi-facebook"></i></a-->
-        <!--a href=""><i class="bi bi-instagram"></i></a-->
-        <a href="https://www.linkedin.com/in/matteo-cirillo-25a835237"><i class="bi bi-linkedin"></i></a>
-      </div>
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>&copy; <span data-year>2026</span> Matteo Cirillo</span>
+      <span><a href="index.html#contact">Contact details</a></span>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>

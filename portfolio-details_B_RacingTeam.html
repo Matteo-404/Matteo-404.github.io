@@ -4,296 +4,158 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Matteo's Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons >
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"-->
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <title>Driverless Hardware for the EPFL Racing Team | Matteo Cirillo</title>
+  <meta name="description" content="Project page for Matteo Cirillo's driverless hardware work with the EPFL Racing Team.">
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
-<body class="portfolio-details-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Projects Showcase</h1>
+<body class="project-page">
+  <header class="site-header" data-header>
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
+        <span class="brand__mark">MC</span>
+        <span class="brand__text">
+          <span class="brand__name">Matteo Cirillo</span>
+          <span class="brand__role">Microengineering portfolio</span>
+        </span>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home<br></a></li>
-          <!--li><a href="index.html#about">About</a></li-->
-          <!--li><a href="index.html#services">Services</a></li-->
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <!--li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li-->
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
 
+      <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+      </nav>
     </div>
   </header>
 
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Test bench for self-driving software</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">EPFL Racing Team</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up">
-        
-        <!--pictures-->
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              },
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/B_RacingTeam/showcase_page.png" alt="">
-              <div class="slider-legend">Arianne : The electric race car built by the students of the EPFL Racing Team, over the 2022-2023 Season.</div>
-            </div>
-            
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/B_RacingTeam/20230817_10-56-19_7171_grobe.jpg" alt="">
-              <div class="slider-legend">Group picture of the team at the 2023 Formula Student Germany competition in Hockenheim</div>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/B_RacingTeam/20230818_13-12-40_0470_maru.jpg" alt="">
-              <div class="slider-legend">Group photo of all the teams competing in the 2023 Formula Student Germany competition at the Hockenheim ring.</div>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/B_RacingTeam/test4.jpg" alt="">
-              <div class="slider-legend">Myself on the left, working on the steering column assembly, in the pits of the Formula Student Switzerland competition.</div>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/B_RacingTeam/Capture.PNG" alt="">
-              <div class="slider-legend">Modified RC car to serve as test platform for the autonomous driving algorithms.</div>
-            </div>
-            
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/B_RacingTeam/track.jpeg" alt="">
-              <div class="slider-legend">An early version of the RC car on the test track for testing vision algorithms.</div>
-            </div>
-
+  <main>
+    <section class="hero project-hero">
+      <div class="shell project-hero__layout">
+        <div>
+          <a class="back-link" href="index.html#projects">Back to selected projects</a>
+          <p class="eyebrow">EPFL Racing Team</p>
+          <h1>Driverless Hardware for the EPFL Racing Team</h1>
+          <p class="lede">
+            Hardware development for autonomous driving, covering both a reduced-risk RC test platform and the sensor
+            integration needed on the full-scale Formula Student race car.
+          </p>
+          <div class="project-tags" aria-label="Project tags">
+            <span class="tag">Student team</span>
+            <span class="tag">Autonomy</span>
+            <span class="tag">System integration</span>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
         </div>
 
-        <div class="row justify-content-between gy-4 mt-4">
-          <!--project description box. on the right in desk nav, but on top in mobile nav.-->
-          <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li class="li-with-image">
-                  <span>
-                    <strong>Location</strong> 
-                    <span>Swiss Federal Institute of Technology (EPFL) - EPFL Racing Team</span>
-                  </span>
-                  <img src="assets/img/logo_epfl.png" alt="" class="li-image" style="width: 70px;">
-                  <img src="assets/img/portfolio/B_RacingTeam/logo.png" alt="" class="li-image" style="width: 70px;">
-                </li>
-                <li><strong>Skills</strong>CAD, mechanical machining, 3D printing, electronics prototyping, team work.<li>
-                <li><strong>Project date</strong> Jul 2022 - Feb 2024</li>
-                <!--li><strong>url if needed?</strong> <a href="#">www.example.com</a></li>
-                <li><a href="#" class="btn-visit align-self-start">again, if needed</a></li-->
-              </ul>
-            </div>
+        <figure class="project-cover">
+          <div class="project-cover__frame">
+            <img src="assets/img/optimized/racing-hero.jpg" alt="EPFL Racing Team electric race car" width="1409" height="1000" fetchpriority="high">
           </div>
+          <figcaption>Ariane, the electric race car built by the EPFL Racing Team during the 2022-2023 season.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-          <!--project description. on the left in desktop nav, but on the bottom in mobile nav-->
-          <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up">
-            <div class="portfolio-description">
-              <h2>Project details</h2>
-              <p>
-                <strong>Context</strong>
-              </p>
-
-              <p>
-                The EPFL Racing Team is an association of around 100 students of EPFL, with the goal of building an electric race car over the course of one academic year, and then compete against other universities during international competitions across Europe in the summer. These competitions include disciplines both with and without a pilot and as a relatively new team, the goal for the 2022-23 season was to implement, for the first time, autonomous driving capability.
-              </p>
-
-              <p>
-                As part of the "driverless hardware" division, my role has been two fold:
-              </p>
-              <ul>
-                <li>To come up with a test bench for the vision and control algorithms for the autonomous driving.</li>
-                <li>To structurally integrate the required sensor package on the full scale race car, while maintaining compliance with Formula Student competition rules.</li>
-              </ul>
-              
-              <p>
-                <strong>Results</strong>
-              </p>
-              <p>
-                The test bench was implemented by fitting a RC car with the same peripherals that would later be used on the full scale race car. That is a Nvidia Jetson onboard computer along with a camera, LiDAR and INS/RTK unit (see picture above). This system was then able to control the RC car autonomously, through an arduino mega interface, along with a CAN bus converter.
-              </p>
-
-              <p>
-                As per the fitting of sensors on the full scale car, the computer and INS were fitted below the driver seat, while the camera and lidar sit next to eachother, attached to the main hoop structure above the driver seat.
-              </p>
-
-              
-              
-              <!--div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Ouais j'ai appris à mettre des guillemets bleus c'est super top!</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <div>
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Jaudoin de la compta</h3>
-                  <h4>Comptable</h4>
-                </div>
-              </div-->
-
-              <div class="testimonial-item">
-                <p>
-                  <strong>Some key results are :</strong>
-                </p>
-
-                <ul>
-                  <li>A working RC car enabling the software team to directly translate algorithms for risk-free testing.</li>
-                  <li>Successful integration of the sensor package to the full-scale race car, which passed competition scrutineering on the first shot.</li>
-                  <li>A first experience working in a big team of over 100 students, which is unlike anything else in academia but rather more industry like.</li>
-                  <li>The opportunity to travel and take part in international competitions, to meet other teams from around the world, to discover their designs, and of course race them!</li>
-                </ul>
-
-                <div>
-                  <h3></h3>
-                  <h4></h4>
-                </div>
+    <section class="section">
+      <div class="shell project-layout">
+        <aside class="meta-column">
+          <section class="meta-card">
+            <h3>Project information</h3>
+            <dl class="meta-list">
+              <div>
+                <dt>Location</dt>
+                <dd>EPFL Racing Team, driverless hardware division</dd>
               </div>
+              <div>
+                <dt>Timeline</dt>
+                <dd>Jul 2022 - Feb 2024</dd>
+              </div>
+              <div>
+                <dt>Skills</dt>
+                <dd>CAD, machining, 3D printing, electronics prototyping and team coordination</dd>
+              </div>
+              <div>
+                <dt>Scale</dt>
+                <dd>Worked within a student association of roughly 100 members building a full Formula Student car</dd>
+              </div>
+            </dl>
+          </section>
+        </aside>
 
-              <!--p><strong>
-                ##Should add a place to put images in the text if really needed... in any case this should be concise probably?##
-              </strong></p>
-
-              <p>
-                Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
-              </p>
-
-              <p>
-                Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
-              </p-->
-
-            </div>
+        <section class="rich-copy">
+          <div>
+            <h2>Context</h2>
+            <p>
+              The EPFL Racing Team builds a new electric race car every academic year and competes in Formula Student
+              events across Europe. During the 2022-2023 season, one of the major technical ambitions was to introduce
+              autonomous driving capability for the first time.
+            </p>
           </div>
-        </div>
 
+          <div>
+            <h2>What I worked on</h2>
+            <p>
+              My role had two main parts. The first was building a safe and useful test bench for the perception and
+              control stack, using an RC car fitted with the same kind of sensing and compute hardware that would later
+              be used on the full-scale vehicle. The second was the structural integration of the sensor package on the
+              race car itself while staying compliant with Formula Student rules.
+            </p>
+            <p>
+              The reduced-scale platform used an Nvidia Jetson, camera, LiDAR and INS/RTK unit, connected through an
+              Arduino-based interface and CAN conversion hardware. On the race car, the compute and navigation hardware
+              were integrated under the driver seat while the camera and LiDAR were mounted on the main hoop structure.
+            </p>
+          </div>
+
+          <div>
+            <h2>Outcome</h2>
+            <ul>
+              <li>A working RC validation platform that let the software team test algorithms in a lower-risk environment.</li>
+              <li>Successful full-scale sensor integration that passed competition scrutineering on the first attempt.</li>
+              <li>Experience working inside a large multidisciplinary engineering team with a pace closer to industry than to a typical course project.</li>
+              <li>International competition exposure and direct comparison with teams from other universities.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section band band--tint">
+      <div class="shell section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h2>Selected visuals</h2>
+        <p>Hardware on the RC platform, the track, and the full-size car.</p>
       </div>
 
-    </section><!-- /Portfolio Details Section -->
-
+      <div class="shell gallery-grid">
+        <figure class="gallery-item">
+          <img src="assets/img/optimized/racing-rc.jpg" alt="RC car fitted with Jetson, LiDAR, camera and supporting electronics" width="1400" height="980" decoding="async">
+          <figcaption>RC platform carrying the Jetson, camera, LiDAR and supporting electronics.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/optimized/racing-track.jpg" alt="RC car running through a cone-marked test track" width="1400" height="933" decoding="async">
+          <figcaption>Early test-track setup for validating vision and control algorithms.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/portfolio/B_RacingTeam/test4.jpg" alt="Team members working on the race car in the pit area" width="1541" height="1241" decoding="async">
+          <figcaption>Working on the full-scale car at Formula Student Switzerland.</figcaption>
+        </figure>
+      </div>
+    </section>
   </main>
 
-  <footer id="footer" class="footer accent-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Matteo Cirillo</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <!--a href=""><i class="bi bi-twitter-x"></i></a-->
-        <!--a href=""><i class="bi bi-facebook"></i></a-->
-        <!--a href=""><i class="bi bi-instagram"></i></a-->
-        <a href="https://www.linkedin.com/in/matteo-cirillo-25a835237"><i class="bi bi-linkedin"></i></a>
-      </div>
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>&copy; <span data-year>2026</span> Matteo Cirillo</span>
+      <span><a href="index.html#contact">Contact details</a></span>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>
