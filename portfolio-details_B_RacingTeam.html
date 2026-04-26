@@ -13,10 +13,10 @@
   <header class="site-header" data-header>
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
-        <span class="brand__mark">MC</span>
+        <!--span class="brand__mark"></span-->
         <span class="brand__text">
           <span class="brand__name">Matteo Cirillo</span>
-          <span class="brand__role">Microengineering portfolio</span>
+          <span class="brand__role">Projects Portfolio</span>
         </span>
       </a>
 
@@ -26,9 +26,9 @@
 
       <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
         <a href="index.html#about">About</a>
-        <a href="index.html#resume">Resume</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="index.html#projects">Projects</a>
-        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -51,11 +51,19 @@
           </div>
         </div>
 
-        <figure class="project-cover">
+        <figure class="project-cover" data-cover-slideshow>
           <div class="project-cover__frame">
-            <img src="assets/img/optimized/racing-hero.jpg" alt="EPFL Racing Team electric race car" width="1409" height="1000" fetchpriority="high">
+            <img class="project-cover__image is-active" src="assets/img/optimized/racing-hero.jpg" alt="EPFL Racing Team electric race car" width="1409" height="1000" fetchpriority="high" data-slide-caption="Ariane, the electric race car built by the EPFL Racing Team during the 2022-2023 season.">
+            <img class="project-cover__image" src="assets/img/optimized/racing-rc.jpg" alt="RC car fitted with Jetson, LiDAR, camera and supporting electronics" width="1400" height="980" decoding="async" data-slide-caption="RC platform carrying the Jetson, camera, LiDAR and supporting electronics.">
+            <img class="project-cover__image" src="assets/img/optimized/racing-track.jpg" alt="RC car running through a cone-marked test track" width="1400" height="933" decoding="async" data-slide-caption="Early test-track setup for validating vision and control algorithms.">
+            <img class="project-cover__image" src="assets/img/portfolio/B_RacingTeam/test4.jpg" alt="Team members working on the race car in the pit area" width="1541" height="1241" decoding="async" data-slide-caption="Working on the full-scale car at Formula Student Switzerland.">
           </div>
-          <figcaption>Ariane, the electric race car built by the EPFL Racing Team during the 2022-2023 season.</figcaption>
+          <div class="project-cover__controls">
+            <button class="project-cover__control" type="button" data-slide-prev aria-label="Previous image">Prev</button>
+            <div class="project-cover__dots" data-slide-dots aria-label="Slide selector"></div>
+            <button class="project-cover__control" type="button" data-slide-next aria-label="Next image">Next</button>
+          </div>
+          <figcaption data-slide-caption-output>Ariane, the electric race car built by the EPFL Racing Team during the 2022-2023 season.</figcaption>
         </figure>
       </div>
     </section>
@@ -124,34 +132,12 @@
       </div>
     </section>
 
-    <section class="section band band--tint">
-      <div class="shell section-heading">
-        <p class="eyebrow">Gallery</p>
-        <h2>Selected visuals</h2>
-        <p>Hardware on the RC platform, the track, and the full-size car.</p>
-      </div>
-
-      <div class="shell gallery-grid">
-        <figure class="gallery-item">
-          <img src="assets/img/optimized/racing-rc.jpg" alt="RC car fitted with Jetson, LiDAR, camera and supporting electronics" width="1400" height="980" decoding="async">
-          <figcaption>RC platform carrying the Jetson, camera, LiDAR and supporting electronics.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/optimized/racing-track.jpg" alt="RC car running through a cone-marked test track" width="1400" height="933" decoding="async">
-          <figcaption>Early test-track setup for validating vision and control algorithms.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/portfolio/B_RacingTeam/test4.jpg" alt="Team members working on the race car in the pit area" width="1541" height="1241" decoding="async">
-          <figcaption>Working on the full-scale car at Formula Student Switzerland.</figcaption>
-        </figure>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell site-footer__inner">
       <span>&copy; <span data-year>2026</span> Matteo Cirillo</span>
-      <span><a href="index.html#contact">Contact details</a></span>
+      <span>All rights reserved.</span>
     </div>
   </footer>
 

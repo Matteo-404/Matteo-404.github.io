@@ -13,10 +13,10 @@
   <header class="site-header" data-header>
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
-        <span class="brand__mark">MC</span>
+        <!--span class="brand__mark"></span-->
         <span class="brand__text">
           <span class="brand__name">Matteo Cirillo</span>
-          <span class="brand__role">Microengineering portfolio</span>
+          <span class="brand__role">Projects Portfolio</span>
         </span>
       </a>
 
@@ -26,9 +26,9 @@
 
       <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
         <a href="index.html#about">About</a>
-        <a href="index.html#resume">Resume</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="index.html#projects">Projects</a>
-        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -51,11 +51,19 @@
           </div>
         </div>
 
-        <figure class="project-cover">
+        <figure class="project-cover" data-cover-slideshow>
           <div class="project-cover__frame">
-            <img src="assets/img/optimized/transmon-hero.jpg" alt="Packaged superconducting chip ready for cryogenic testing" width="1400" height="788" fetchpriority="high">
+            <img class="project-cover__image is-active" src="assets/img/optimized/transmon-hero.jpg" alt="Packaged superconducting chip ready for cryogenic testing" width="1400" height="788" fetchpriority="high" data-slide-caption="Packaging of a superconducting chip for mounting in the dilution cryostat.">
+            <img class="project-cover__image" src="assets/img/optimized/transmon-sem.jpg" alt="SEM micrograph of a niobium resonator" width="1333" height="1000" decoding="async" data-slide-caption="SEM micrograph of a fabricated niobium resonator.">
+            <img class="project-cover__image" src="assets/img/portfolio/1_Semester1/afterHF13.png" alt="SEM image highlighting a quarter-wave resonator coupled to its feedline" width="1024" height="768" decoding="async" data-slide-caption="Quarter-wave resonator geometry coupled to its feedline.">
+            <img class="project-cover__image" src="assets/img/portfolio/1_Semester1/dilution3.jpg" alt="Opened dilution fridge used for chip characterization" width="1139" height="641" decoding="async" data-slide-caption="Opened dilution fridge used for cryogenic characterization of the chips.">
           </div>
-          <figcaption>Packaging of a superconducting chip for mounting in the dilution cryostat.</figcaption>
+          <div class="project-cover__controls">
+            <button class="project-cover__control" type="button" data-slide-prev aria-label="Previous image">Prev</button>
+            <div class="project-cover__dots" data-slide-dots aria-label="Slide selector"></div>
+            <button class="project-cover__control" type="button" data-slide-next aria-label="Next image">Next</button>
+          </div>
+          <figcaption data-slide-caption-output>Packaging of a superconducting chip for mounting in the dilution cryostat.</figcaption>
         </figure>
       </div>
     </section>
@@ -122,34 +130,12 @@
       </div>
     </section>
 
-    <section class="section band band--tint">
-      <div class="shell section-heading">
-        <p class="eyebrow">Gallery</p>
-        <h2>Selected visuals</h2>
-        <p>A few views from fabrication and measurement.</p>
-      </div>
-
-      <div class="shell gallery-grid">
-        <figure class="gallery-item">
-          <img src="assets/img/optimized/transmon-sem.jpg" alt="SEM micrograph of a niobium resonator" width="1333" height="1000" decoding="async">
-          <figcaption>SEM micrograph of a fabricated niobium resonator.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/portfolio/1_Semester1/afterHF13.png" alt="SEM image highlighting a quarter-wave resonator coupled to its feedline" width="1024" height="768" decoding="async">
-          <figcaption>Quarter-wave resonator geometry coupled to its feedline.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/portfolio/1_Semester1/dilution3.jpg" alt="Opened dilution fridge used for chip characterization" width="1139" height="641" decoding="async">
-          <figcaption>Opened dilution fridge used for cryogenic characterization of the chips.</figcaption>
-        </figure>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell site-footer__inner">
       <span>&copy; <span data-year>2026</span> Matteo Cirillo</span>
-      <span><a href="index.html#contact">Contact details</a></span>
+      <span>All rights reserved.</span>
     </div>
   </footer>
 

@@ -13,10 +13,10 @@
   <header class="site-header" data-header>
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
-        <span class="brand__mark">MC</span>
+        <!--span class="brand__mark"></span-->
         <span class="brand__text">
           <span class="brand__name">Matteo Cirillo</span>
-          <span class="brand__role">Microengineering portfolio</span>
+          <span class="brand__role">Projects Portfolio</span>
         </span>
       </a>
 
@@ -26,9 +26,9 @@
 
       <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
         <a href="index.html#about">About</a>
-        <a href="index.html#resume">Resume</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="index.html#projects">Projects</a>
-        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -51,11 +51,19 @@
           </div>
         </div>
 
-        <figure class="project-cover">
+        <figure class="project-cover" data-cover-slideshow>
           <div class="project-cover__frame">
-            <img src="assets/img/optimized/psi-hero.jpg" alt="Prototype acousto-optic modulation board on an optical table" width="1600" height="901" fetchpriority="high">
+            <img class="project-cover__image is-active" src="assets/img/optimized/psi-hero.jpg" alt="Prototype acousto-optic modulation board on an optical table" width="1600" height="901" fetchpriority="high" data-slide-caption="Prototype board mounted on an optical table during development.">
+            <img class="project-cover__image" src="assets/img/optimized/psi-rack.jpg" alt="Rack rendering showing several AOM boards installed in a lab rack" width="1600" height="900" decoding="async" data-slide-caption="Render of a typical lab rack with several boards installed.">
+            <img class="project-cover__image" src="assets/img/portfolio/A_PSI/aoms.jpg" alt="Different acousto-optic modulators compatible with the board" width="1492" height="840" decoding="async" data-slide-caption="Range of AOM devices the board was designed to accommodate.">
+            <img class="project-cover__image" src="assets/img/portfolio/A_PSI/boardDisplay.jpg" alt="Final AOM board installed and displayed in its enclosure" width="1164" height="826" decoding="async" data-slide-caption="Final double-pass AOM board in its finished form.">
           </div>
-          <figcaption>Prototype board mounted on an optical table during development.</figcaption>
+          <div class="project-cover__controls">
+            <button class="project-cover__control" type="button" data-slide-prev aria-label="Previous image">Prev</button>
+            <div class="project-cover__dots" data-slide-dots aria-label="Slide selector"></div>
+            <button class="project-cover__control" type="button" data-slide-next aria-label="Next image">Next</button>
+          </div>
+          <figcaption data-slide-caption-output>Prototype board mounted on an optical table during development.</figcaption>
         </figure>
       </div>
     </section>
@@ -123,34 +131,12 @@
       </div>
     </section>
 
-    <section class="section band band--tint">
-      <div class="shell section-heading">
-        <p class="eyebrow">Gallery</p>
-        <h2>Selected visuals</h2>
-        <p>From concept render to the practical optical hardware.</p>
-      </div>
-
-      <div class="shell gallery-grid">
-        <figure class="gallery-item">
-          <img src="assets/img/optimized/psi-rack.jpg" alt="Rack rendering showing several AOM boards installed in a lab rack" width="1600" height="900" decoding="async">
-          <figcaption>Render of a typical lab rack with several boards installed.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/portfolio/A_PSI/aoms.jpg" alt="Different acousto-optic modulators compatible with the board" width="1492" height="840" decoding="async">
-          <figcaption>Range of AOM devices the board was designed to accommodate.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/portfolio/A_PSI/boardDisplay.jpg" alt="Final AOM board installed and displayed in its enclosure" width="1164" height="826" decoding="async">
-          <figcaption>Final double-pass AOM board in its finished form.</figcaption>
-        </figure>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell site-footer__inner">
       <span>&copy; <span data-year>2026</span> Matteo Cirillo</span>
-      <span><a href="index.html#contact">Contact details</a></span>
+      <span>All rights reserved.</span>
     </div>
   </footer>
 

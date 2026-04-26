@@ -13,10 +13,10 @@
   <header class="site-header" data-header>
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
-        <span class="brand__mark">MC</span>
+        <!--span class="brand__mark"></span-->
         <span class="brand__text">
           <span class="brand__name">Matteo Cirillo</span>
-          <span class="brand__role">Microengineering portfolio</span>
+          <span class="brand__role">Projects Portfolio</span>
         </span>
       </a>
 
@@ -26,9 +26,9 @@
 
       <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
         <a href="index.html#about">About</a>
-        <a href="index.html#resume">Resume</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="index.html#projects">Projects</a>
-        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -51,11 +51,19 @@
           </div>
         </div>
 
-        <figure class="project-cover">
+        <figure class="project-cover" data-cover-slideshow>
           <div class="project-cover__frame">
-            <img src="assets/img/optimized/soclean-hero.jpg" alt="Autonomous solar panel cleaner prototype on a panel array" width="1600" height="901" fetchpriority="high">
+            <img class="project-cover__image is-active" src="assets/img/optimized/soclean-hero.jpg" alt="Autonomous solar panel cleaner prototype on a panel array" width="1600" height="901" fetchpriority="high" data-slide-caption="The final autonomous solar panel cleaner prototype.">
+            <img class="project-cover__image" src="assets/img/optimized/soclean-concept.jpg" alt="CAD concept of the solar panel cleaner system" width="1530" height="1000" decoding="async" data-slide-caption="Concept CAD showing the cleaning robot, top carriage and connecting straps.">
+            <img class="project-cover__image" src="assets/img/portfolio/C_SoClean/conops.PNG" alt="Concept of operations diagram for the autonomous cleaner" width="784" height="555" decoding="async" data-slide-caption="Concept of operations for the autonomous cleaning cycle.">
+            <img class="project-cover__image" src="assets/img/portfolio/C_SoClean/team.jpeg" alt="Project team posing together on presentation night" width="1024" height="768" decoding="async" data-slide-caption="The team at the end of the project on presentation night.">
           </div>
-          <figcaption>The final autonomous solar panel cleaner prototype.</figcaption>
+          <div class="project-cover__controls">
+            <button class="project-cover__control" type="button" data-slide-prev aria-label="Previous image">Prev</button>
+            <div class="project-cover__dots" data-slide-dots aria-label="Slide selector"></div>
+            <button class="project-cover__control" type="button" data-slide-next aria-label="Next image">Next</button>
+          </div>
+          <figcaption data-slide-caption-output>The final autonomous solar panel cleaner prototype.</figcaption>
         </figure>
       </div>
     </section>
@@ -128,34 +136,12 @@
       </div>
     </section>
 
-    <section class="section band band--tint">
-      <div class="shell section-heading">
-        <p class="eyebrow">Gallery</p>
-        <h2>Selected visuals</h2>
-        <p>Concept, system view and project wrap-up.</p>
-      </div>
-
-      <div class="shell gallery-grid">
-        <figure class="gallery-item">
-          <img src="assets/img/optimized/soclean-concept.jpg" alt="CAD concept of the solar panel cleaner system" width="1530" height="1000" decoding="async">
-          <figcaption>Concept CAD showing the cleaning robot, top carriage and connecting straps.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/portfolio/C_SoClean/conops.PNG" alt="Concept of operations diagram for the autonomous cleaner" width="784" height="555" decoding="async">
-          <figcaption>Concept of operations for the autonomous cleaning cycle.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/img/portfolio/C_SoClean/team.jpeg" alt="Project team posing together on presentation night" width="1024" height="768" decoding="async">
-          <figcaption>The team at the end of the project on presentation night.</figcaption>
-        </figure>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell site-footer__inner">
       <span>&copy; <span data-year>2026</span> Matteo Cirillo</span>
-      <span><a href="index.html#contact">Contact details</a></span>
+      <span>All rights reserved.</span>
     </div>
   </footer>
 

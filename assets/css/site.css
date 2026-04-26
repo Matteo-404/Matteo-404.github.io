@@ -680,16 +680,71 @@ select {
 }
 
 .project-cover__frame {
+  position: relative;
   overflow: hidden;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  background: var(--surface-solid);
-  box-shadow: var(--shadow);
+  aspect-ratio: 16 / 10;
 }
 
 .project-cover__frame img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.project-cover__image {
+  display: none;
+}
+
+.project-cover__image.is-active {
+  display: block;
+}
+
+.project-cover__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.project-cover__control {
+  min-height: 2.1rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.project-cover__control:hover,
+.project-cover__control:focus-visible {
+  border-color: rgba(31, 93, 82, 0.36);
+}
+
+.project-cover__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.project-cover__dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(33, 29, 26, 0.22);
+  cursor: pointer;
+}
+
+.project-cover__dot.is-active {
+  background: var(--brand);
 }
 
 .project-cover figcaption {
