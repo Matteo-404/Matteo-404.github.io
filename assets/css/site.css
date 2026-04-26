@@ -583,11 +583,26 @@ select {
   line-height: 1.15;
 }
 
-.project-card__arrow {
+.project-card__footer {
   margin-top: auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.65rem;
+}
+
+.project-card__arrow {
   color: var(--ink);
   font-size: 0.92rem;
   font-weight: 700;
+}
+
+.project-card__date {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .contact-panel {
