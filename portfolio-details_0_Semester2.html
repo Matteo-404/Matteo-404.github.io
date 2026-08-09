@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Trilayer AFM Cantilevers for SECM | Matteo Cirillo</title>
-  <meta name="description" content="Placeholder project page for trilayer AFM cantilever fabrication at EPFL LBNI.">
+  <meta name="description" content="Project page for the fabrication of trilayer AFM cantilevers for scanning electrochemical microscopy at EPFL LBNI.">
   <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
@@ -13,7 +13,6 @@
   <header class="site-header" data-header>
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
-        <!--span class="brand__mark"></span-->
         <span class="brand__text">
           <span class="brand__name">Matteo Cirillo</span>
           <span class="brand__role">Projects Portfolio</span>
@@ -39,22 +38,33 @@
         <div>
           <a class="back-link" href="index.html#projects">Back to selected projects</a>
           <p class="eyebrow">EPFL - LBNI Group</p>
-          <h1>Fabrication of Trilayer AFM Cantilevers for Scanning Electrochemical Microscopy Applications.</h1>
+          <h1>Fabrication of Trilayer AFM Cantilevers for Scanning Electrochemical Microscopy Applications</h1>
           <p class="lede">
-            This project page is a placeholder and will be expanded with process details, fabrication flow, and outcomes.
+            Semester project on the fabrication of trilayer AFM cantilevers for SECM applications.Designed and fabricated the devices in cleanroom, experimentally demonstrating novel scanning probe 
+capabilities that resulted in a collaboration with leading industry partners. 
           </p>
           <div class="project-tags" aria-label="Project tags">
             <span class="tag">Research</span>
             <span class="tag">Microfabrication</span>
-            <span class="tag">AFM</span>
+            <span class="tag">AFM / SECM</span>
           </div>
         </div>
 
-        <figure class="project-cover">
+        <figure class="project-cover" data-cover-slideshow>
           <div class="project-cover__frame">
-            <img src="assets/img/portfolio/0_Semester2/showcase_comp.jpg" alt="Trilayer AFM cantilever project visual" width="1400" height="788" fetchpriority="high">
+            <img class="project-cover__image is-active" src="assets/img/portfolio/0_Semester2/showcase_comp.jpg" alt="Fabricated trilayer cantilever structure for SECM applications" width="1400" height="788" fetchpriority="high" data-slide-caption="SEM mircograph of fabricated trilayer cantilever structure for SECM applications">
+            <img class="project-cover__image" src="assets/img/portfolio/0_Semester2/layers.png" alt="process flow overview" width="1400" height="788" decoding="async" data-slide-caption="Illustrative cross sections of the main steps in the process flow. a) Deposited metal trace. b) Bonded wafers assembly. c) Chip body formation. d) Final cross section.">
+            <img class="project-cover__image" src="assets/img/portfolio/0_Semester2/IMG_2742.JPG" alt="Optical image of formed chip bodies on the wafer" width="1400" height="788" decoding="async" data-slide-caption="Optical image of the wafer after the KOH etch for chip-body formation.">
+            <img class="project-cover__image" src="assets/img/portfolio/0_Semester2/cleanroom.jpeg" alt="Cleanroom environment during fabrication" width="1400" height="788" decoding="async" data-slide-caption="Bunny suit picture in the changing room during a cleanroom visit for my dad.">
+            <img class="project-cover__image" src="assets/img/portfolio/0_Semester2/chipcarrier.png" alt="Chip holder used to interface the cantilever probe" width="1400" height="788" decoding="async" data-slide-caption="Support structure used for mounting and testing the probe.">
+            <img class="project-cover__image" src="assets/img/portfolio/0_Semester2/Multimode8.jpeg" alt="Multimode AFM setup compatible with the fabricated probe" width="1400" height="788" decoding="async" data-slide-caption="The multimode AFM setup used to evaluate the probe platform.">
           </div>
-          <figcaption>Website update pending: detailed project visuals and explanation will be added soon.</figcaption>
+          <div class="project-cover__controls">
+            <button class="project-cover__control" type="button" data-slide-prev aria-label="Previous image">Prev</button>
+            <div class="project-cover__dots" data-slide-dots aria-label="Slide selector"></div>
+            <button class="project-cover__control" type="button" data-slide-next aria-label="Next image">Next</button>
+          </div>
+          <figcaption data-slide-caption-output>Fabricated trilayer cantilever platform used as the main project visual.</figcaption>
         </figure>
       </div>
     </section>
@@ -74,8 +84,8 @@
                 <dd>Feb 2025 - Jul 2025</dd>
               </div>
               <div>
-                <dt>Status</dt>
-                <dd>Pending website update</dd>
+                <dt>Skills</dt>
+                <dd>Microfabrication, thin-film processing, evaporation, sputtering, LPCVD, photolithography, wafer bonding, wet etching, and scanning electron microscopy.</dd>
               </div>
             </dl>
           </section>
@@ -83,10 +93,50 @@
 
         <section class="rich-copy">
           <div>
-            <h2>Page update notice</h2>
+            <h2>Context</h2>
             <p>
-              The website needs to be updated for this project. A complete case-study version of this page will be published soon.
+              AFM has evolved far beyond simple topographic imaging, and combining it with electrochemical sensing opens a way to map local surface reactivity and morphology at the same time. The goal of this semester project was to extend the existing trilayer cantilever platform at LBNI into a prototype for AFM-SECM, where an insulated metal trace could carry a signal from the chip body to the tip apex.
             </p>
+          </div>
+
+          <div>
+            <h2>What I built</h2>
+            <p>
+              I developed a prototyping platform for trilayer AFM cantilevers with a buried conductive trace, based on the established SiN–BCB–SiN architecture. The design aimed to preserve the mechanical behavior of the cantilever while integrating an insulated metal path that could later be opened at the tip to form a local electrochemical electrode.
+            </p>
+            <p>
+              The work included device design, a full cleanroom fabrication run, and characterization of the completed cantilevers. The design was guided by the requirement to keep the devices compatible with standard AFM instrumentation while making the structure suitable for future AFM-SECM operation.
+            </p>
+          </div>
+
+          <div>
+            <h2>Fabrication and process development</h2>
+            <p> 
+              The fabrication process flow was based on the existing trilayer platform and extended with two key additions: a metal trace embedded in the stack and a contact pad exposed on the chip body for later electrical access. The trace was designed with a thicker region near the tip and a thinner, softer section along the cantilever body, so that the structure could remain mechanically compatible with contact-mode AFM while still providing a usable conductive path.
+            </p>
+            <p>
+              I worked through the full process chain in CMi, including alignment-transfer steps, metal-trace formation, BCB bonding, wafer thinning and chip-body shaping, and final device patterning and release. Gold was selected for the completed fabrication run because it was the most practical option to validate within the project timeline, whereas platinum was explored but ultimately abandoned because of severe processing difficulties.
+            </p>
+          </div>
+
+          <div>
+            <h2>Characterization and outcome</h2>
+            <p>
+              The completed gold-based devices achieved a very high fabrication yield, with 191 out of 197 designed devices completed defect-free. Mechanical characterization by thermal tuning on two independent setups showed resonance frequencies from roughly 9 to 49 kHz and stiffness values from about 0.25 to 4.1 N/m, in good agreement with the analytical Euler-Bernoulli model.
+            </p>
+            <p>
+              The project therefore demonstrated that a gold conductive trace could be integrated into the trilayer cantilever architecture without losing AFM compatibility. It also exposed the main remaining challenge for true AFM-SECM operation: opening the tip to expose the buried metal and validating the electrochemical response in liquid, which remains the next step for the platform. The prototypes also sparked a collaboration with an industry partner in the AFM instrumentation sector, reinforcing the relevance of the platform beyond the academic setting.
+            </p>
+          </div>
+
+          <div>
+            <h2>Key takeaways</h2>
+            <ul>
+              <li>Built a functional prototyping platform for AFM-SECM cantilevers based on the LBNI trilayer architecture.</li>
+              <li>Integrated an insulated buried metal trace while maintaining the mechanical requirements of contact-mode AFM.</li>
+              <li>Completed a full cleanroom fabrication run and validated the resulting devices through mechanical characterization.</li>
+              <li>Established a strong basis for future work on electrochemical tip opening, electrolyte testing, and further process refinement.</li>
+            </ul>
           </div>
         </section>
       </div>
