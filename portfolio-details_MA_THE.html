@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Advanced SNSPDs for Basic Science | Matteo Cirillo</title>
-  <meta name="description" content="Placeholder project page for Advanced SNSPDs for Basic Science.">
+  <title>Systematic Study of SNSPD Depairing Current and Photoresponse | Matteo Cirillo</title>
+  <meta name="description" content="Master's thesis at NASA JPL on the design, fabrication, and testing of superconducting nanowire single-photon detectors.">
   <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
@@ -13,7 +13,6 @@
   <header class="site-header" data-header>
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" aria-label="Matteo Cirillo home">
-        <!--span class="brand__mark"></span-->
         <span class="brand__text">
           <span class="brand__name">Matteo Cirillo</span>
           <span class="brand__role">Projects Portfolio</span>
@@ -39,22 +38,32 @@
         <div>
           <a class="back-link" href="index.html#projects">Back to selected projects</a>
           <p class="eyebrow">NASA - Jet Propulsion Laboratory</p>
-          <h1>Advanced SNSPDs for Basic Science.</h1>
+          <h1>Systematic Study of Depairing Current and Photoresponse in SNSPDs</h1>
           <p class="lede">
-            This project page is a placeholder and will be expanded with full technical context, scope, and outcomes.
+            <strong>Note:</strong> This project page is intentionally incomplete. Details are momentarily
+             withheld while the main results are prepared for peer-reviewed publication.
           </p>
           <div class="project-tags" aria-label="Project tags">
-            <span class="tag">Research</span>
-            <span class="tag">Photonics</span>
-            <span class="tag">SNSPD</span>
+            <span class="tag">Master's thesis</span>
+            <span class="tag">SNSPDs</span>
+            <span class="tag">Optics &amp; photonics</span>
+            <span class="tag">Superconducting devices</span>
+            <span class="tag">Experimental research</span>
           </div>
         </div>
 
-        <figure class="project-cover">
+        <figure class="project-cover" data-cover-slideshow>
           <div class="project-cover__frame">
-            <img src="assets/img/portfolio/MA_THE/Picture6.jpg" alt="Advanced SNSPDs project visual" width="1400" height="788" fetchpriority="high">
+            <img class="project-cover__image is-active" src="assets/img/portfolio/MA_THE/masterThesisPresentation-hero.png" alt="Presentation slide introducing the SNSPD master's thesis project" width="1400" height="788" fetchpriority="high" data-slide-caption="Master's thesis project on superconducting nanowire single-photon detectors at NASA JPL. Illustrated is a fabricated die of MgB2 SNSPDs.">
+            <img class="project-cover__image" src="assets/img/portfolio/MA_THE/nasaSign.jpg" alt="NASA Jet Propulsion Laboratory sign" width="1400" height="788" decoding="async" data-slide-caption="NASA Jet Propulsion Laboratory, where the thesis research was conducted.">
+            <img class="project-cover__image" src="assets/img/portfolio/MA_THE/setup.png" alt="Experimental setup used to characterize superconducting nanowire single-photon detectors" width="1400" height="788" decoding="async" data-slide-caption="Cryostat setup used for the characterization of SNSPD depairing-current and photoresponse.">
           </div>
-          <figcaption>Website update pending: detailed project visuals and explanation will be added soon.</figcaption>
+          <div class="project-cover__controls">
+            <button class="project-cover__control" type="button" data-slide-prev aria-label="Previous image">Prev</button>
+            <div class="project-cover__dots" data-slide-dots aria-label="Slide selector"></div>
+            <button class="project-cover__control" type="button" data-slide-next aria-label="Next image">Next</button>
+          </div>
+          <figcaption data-slide-caption-output>Master's thesis project on superconducting nanowire single-photon detectors at NASA JPL.</figcaption>
         </figure>
       </div>
     </section>
@@ -67,15 +76,23 @@
             <dl class="meta-list">
               <div>
                 <dt>Location</dt>
-                <dd>NASA - Jet Propulsion Laboratory</dd>
+                <dd>NASA Jet Propulsion Laboratory, Pasadena, California</dd>
               </div>
               <div>
                 <dt>Timeline</dt>
-                <dd>Jan 2026 - Present</dd>
+                <dd>January 2026 - Present</dd>
               </div>
               <div>
-                <dt>Status</dt>
-                <dd>Pending website update</dd>
+                <dt>Role</dt>
+                <dd>Graduate Research Fellow</dd>
+              </div>
+              <div>
+                <dt>Applications</dt>
+                <dd>Deep-space optical communications and photonic quantum computing</dd>
+              </div>
+              <div>
+                <dt>Skills</dt>
+                <dd>SNSPD design, optical design and characterization, superconducting thin films, microfabrication, vacuum and cryogenic measurements, experimental automation, and data analysis</dd>
               </div>
             </dl>
           </section>
@@ -83,9 +100,46 @@
 
         <section class="rich-copy">
           <div>
-            <h2>Page update notice</h2>
+            <h2>Context</h2>
             <p>
-              The website needs to be updated for this project. A complete case-study version of this page will be published soon.
+              Superconducting nanowire single-photon detectors are highly sensitive devices for counting individual
+              photons, with applications ranging from deep-space optical links to quantum information systems. Their
+              performance depends on the interaction between the superconducting material, nanowire geometry, bias
+              current, and the energy of an absorbed photon.
+            </p>
+            <p>
+              This thesis addressed the need for systematic measurements that connect SNSPD photoresponse to the
+              device's intrinsic depairing current, providing a more consistent basis for modeling detector physics
+              and improving future device designs.
+            </p>
+          </div>
+
+          <div>
+            <h2>What I worked on</h2>
+            <p>
+              I designed and tested SNSPD devices across a range of geometries, materials, and illumination
+              conditions. The experimental work included superconducting thin-film platforms such as WSi, NbTiN, and
+              MgB2, together with device fabrication, packaging, cooldowns, and optoelectronic characterization.
+            </p>
+            <p>
+              I performed systematic depairing-current and photoresponse measurements while developing robust control and
+              analysis workflows for the experimental setup.
+              I later investigated how the measurements could be compared with existing theoretical descriptions of photon detection and 
+              developed a first-of-its-kind empirical model for predicting SNSPD photoresponse based on design parameters.
+            </p>
+          </div>
+
+          <div>
+            <h2>Outcomes</h2>
+            <p>
+              A central outcome of the project was a predictive design tool for estimating SNSPD photoresponse from
+              device and material parameters. The tool is intended to support the design and interpretation of future
+              detector experiments while helping bridge empirical measurements and theoretical models.
+            </p>
+            <p>
+              The detailed findings of the thesis are not presented here because the main results are currently pending
+              publication. Following my thesis defense in July, I was invited to remain at NASA JPL to continue the
+              work and prepare the findings for submission to a peer-reviewed journal.
             </p>
           </div>
         </section>
