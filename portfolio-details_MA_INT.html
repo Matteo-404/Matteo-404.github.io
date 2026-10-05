@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Thermal Radiation Background in SNSPD Dark-Count Rates | Matteo Cirillo</title>
-  <meta name="description" content="Placeholder project page for SNSPD dark-count investigation at Single Quantum.">
+  <meta name="description" content="Research internship at Single Quantum investigating thermal-radiation-induced dark counts in superconducting nanowire single-photon detectors.">
   <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
@@ -41,20 +41,30 @@
           <p class="eyebrow">Single Quantum B.V.</p>
           <h1>Investigation of the thermal radiation background in SNSPD dark-count rates.</h1>
           <p class="lede">
-            This project page is a placeholder and will be updated with full methodology, setup details, and results.
+            R&amp;D internship investigating how thermal photons generate dark counts in superconducting nanowire
+            single-photon detector (SNSPD) systems and how to reduce their impact at telecom wavelengths.
           </p>
           <div class="project-tags" aria-label="Project tags">
             <span class="tag">Internship</span>
             <span class="tag">SNSPD</span>
-            <span class="tag">Characterization</span>
+            <span class="tag">Photonics</span>
+            <span class="tag">Experimental research</span>
           </div>
         </div>
 
-        <figure class="project-cover">
+        <figure class="project-cover" data-cover-slideshow>
           <div class="project-cover__frame">
-            <img src="assets/img/portfolio/MA_INT/showcase.jpg" alt="Single Quantum SNSPD project visual" width="1400" height="788" fetchpriority="high">
+            <img class="project-cover__image is-active" src="assets/img/portfolio/MA_INT/showcase.jpg" alt="Close-up of a Single Quantum superconducting nanowire single-photon detector" fetchpriority="high" data-slide-caption="Quarter wafer with individual SNSPD dies used in this dark-count investigation project.">
+            <img class="project-cover__image" src="assets/img/portfolio/MA_INT/typicalSetup.png" alt="Diagram of an SNSPD system with its cryostat, electronics, fibers and computer" decoding="async" data-slide-caption="Typical SNSPD system commercialized by SingleQuantum, and which was used in this work.">
+            <img class="project-cover__image" src="assets/img/portfolio/MA_INT/automatedEfficiencyCharacterizationSetup.jpg" alt="Automated SNSPD efficiency characterization setup with a cryostat and measurement equipment" decoding="async" data-slide-caption="1260 - 2181 nm laser setup for characterizing the system detection efficiency and dark-count rates of individual SNSPD channels in the system.">
+            <img class="project-cover__image" src="assets/img/portfolio/MA_INT/model_vs_experiment.png" alt="Plot comparing the predicted thermal dark-count rate with experimental measurements" decoding="async" data-slide-caption="Comparison of the experimentally observed dark-count rate with the simulated prediction of the model developed in this project.">
           </div>
-          <figcaption>Website update pending: detailed project visuals and explanation will be added soon.</figcaption>
+          <div class="project-cover__controls">
+            <button class="project-cover__control" type="button" data-slide-prev aria-label="Previous image">Prev</button>
+            <div class="project-cover__dots" data-slide-dots aria-label="Slide selector"></div>
+            <button class="project-cover__control" type="button" data-slide-next aria-label="Next image">Next</button>
+          </div>
+          <figcaption data-slide-caption-output>SNSPD array used in the dark-count investigation.</figcaption>
         </figure>
       </div>
     </section>
@@ -67,15 +77,19 @@
             <dl class="meta-list">
               <div>
                 <dt>Location</dt>
-                <dd>Single Quantum B.V.</dd>
+                <dd>Single Quantum B.V., Delft, Netherlands</dd>
               </div>
               <div>
                 <dt>Timeline</dt>
-                <dd>Oct 2025 - Dec 2025</dd>
+                <dd>Autumn 2025</dd>
               </div>
               <div>
-                <dt>Status</dt>
-                <dd>Pending website update</dd>
+                <dt>Role</dt>
+                <dd>Intern in R&amp;D</dd>
+              </div>
+              <div>
+                <dt>Skills</dt>
+                <dd>Thermal-radiation modeling, optical system characterization and data analysis</dd>
               </div>
             </dl>
           </section>
@@ -83,10 +97,39 @@
 
         <section class="rich-copy">
           <div>
-            <h2>Page update notice</h2>
+            <h2>Context</h2>
             <p>
-              The website needs to be updated for this project. A complete case-study version of this page will be published soon.
+              Superconducting nanowire single-photon detectors are designed to register extremely weak optical signals,
+              but unwanted photons can also produce counts when no signal is present. In the near infrared and at telecom wavelengths, thermal
+              radiation is the dominant noise source contributing to the dark-counts of an SNSPD system.
             </p>
+          </div>
+
+          <div>
+            <h2>What I investigated</h2>
+            <p>
+              At Single Quantum, I led a theoretical and experimental investigation of this thermal background with the goal of identifying key sources of thermal photons and 
+              quantitatively understanding their impact on the performance of SNSPD systems. 
+              I developed a physical model and simulation framework that combines blackbody photon generation, propagation
+              through the optical system, and the wavelength-dependent detection efficiency to quantify the expected
+              thermal contribution to the dark-count rate.
+            </p>
+            <p>
+              I then used automated characterization measurements to test the model against typical SNSPDs systems in various scenarios and configurations. 
+              This enabled comparing results to the developed model's simulations, identifying the parts of the system that dominate
+              the thermal background, and evaluating mitigation strategies for improved performance.
+            </p>
+          </div>
+
+          <div>
+            <h2>Outcomes</h2>
+            <ul>
+              <li>Identification of the main sources of thermal radiation in SingleQuantum's SNSPD systems and their impact on the dark-count rate.</li>
+              <li>A simulation framework that accurately encapsulates the thermal photon generation and propagation through the SNSPD system in various operating conditions.</li>
+              <li>Experimental validation of the model through efficiency and dark-count measurements of several SNSPD devices.</li>
+              <li>Design strategies to reduce thermally induced dark counts in future low-dark-count products.</li>
+              <li>Improved suitability of SNSPD systems for quantum key distribution and optical communications.</li>
+            </ul>
           </div>
         </section>
       </div>
