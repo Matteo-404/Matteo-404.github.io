@@ -1,4 +1,15 @@
 (() => {
+  const resumeLinks = Array.from(document.querySelectorAll('a[href*="assets/resume.pdf"]'));
+
+  let resumeDownloadId = 0;
+  resumeLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      const resumeUrl = new URL(link.href, window.location.href);
+      resumeUrl.searchParams.set("v", `${Date.now()}-${++resumeDownloadId}`);
+      link.href = resumeUrl.toString();
+    });
+  });
+
   const header = document.querySelector("[data-header]");
   const toggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-nav]");
