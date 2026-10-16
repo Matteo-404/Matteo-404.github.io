@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>AOM Board for Trapped-Ion Quantum Computing | Matteo Cirillo</title>
   <meta name="description" content="Project page for Matteo Cirillo's internship work on acousto-optic modulation hardware for trapped-ion quantum computing.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
@@ -83,10 +84,6 @@
                 <dd>Summer 2024</dd>
               </div>
               <div>
-                <dt>Supervision</dt>
-                <dd>Prof. C. Hempel, Dr. J. Schmidt and E. Brucke</dd>
-              </div>
-              <div>
                 <dt>Skills</dt>
                 <dd>Acousto-optics, optomechanical prototyping and compact system integration</dd>
               </div>
@@ -99,7 +96,7 @@
             <h2>Context</h2>
             <p>
               Trapped-ion quantum computing depends on a dense optical setup with many wavelengths and many beams, each
-              requiring control over frequency, direction or intensity. Double-pass AOM architectures are a standard
+              requiring control over frequency and/or intensity. Double-pass AOM architectures are a standard
               way to achieve that control, but conventional setups can consume a large amount of optical-table space.
             </p>
           </div>
@@ -107,14 +104,15 @@
           <div>
             <h2>What I built</h2>
             <p>
-              My task was to prototype a compact and versatile double-pass AOM module that could be mounted on a small
-              board, produced repeatedly, and still accommodate the range of wavelengths and configurations required by
+              My task was to prototype a compact and versatile double-pass AOM module on a small board that could be mounted on a 
+              rack, produced repeatedly, and still accommodate the range of wavelengths and configurations required by
               the lab. The resulting design uses a polarizing beam splitter together with a cat's-eye retroreflector,
-              along with kinematic mirrors, rotary waveplates and custom edge stops for alignment.
+              along with kinematic mirrors, rotary waveplates, and custom edge stops for alignment.
             </p>
             <p>
               The final device is rack-mountable and uses a clean fiber-based input and output interface, making it
-              easier to deploy in a structured experimental environment.
+              easier to deploy in a structured experimental environment. Future work would focus on adding monitoring
+              of input and output powers, as well as a more robust enclosure to protect the optics.
             </p>
           </div>
 
@@ -122,9 +120,9 @@
             <h2>Outcome</h2>
             <ul>
               <li>Roughly a threefold size reduction compared with the previous optical-table implementations used in the lab.</li>
-              <li>Coverage of common AOM use cases including frequency scanning, beam deflection and laser switching.</li>
+              <li>Coverage of common AOM use cases including frequency scanning and laser switching.</li>
               <li>A Bragg-angle operating range that supports wavelengths from 400 to 900 nm and RF modulation up to 300 MHz.</li>
-              <li>A versatile platform that went on to be used both at PSI and within the TIQI group at ETH.</li>
+              <li>A versatile platform that went on to be used both at PSI and ETH groups.</li>
             </ul>
           </div>
         </section>
